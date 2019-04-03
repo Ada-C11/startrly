@@ -20,13 +20,14 @@ nav ul {
   font-size: 25px;
 }
 
+
 .quote1{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 25px);
   flex-wrap: wrap;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 80px;
   font-style: italic;
 }
 
@@ -36,20 +37,32 @@ nav ul {
 
 .content {
   text-align: center;
+  padding-top: 80px;
 }
 
 .content ul{
-  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
-  /* text-align: right; */
+  text-align: right;
+  font-size: 16px;
 }
 
 .quote2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 25px);
-    flex-wrap: wrap;
-    text-align: center;
-    padding-top: 20px;
-    font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 25px);
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 80px;
+  font-style: italic;
+}
+
+.quote2 blockquote + p:before {
+  content: "--";
+}
+
+.team ul {
+  white-space: wrap;
+  list-style-type: none;
 }
