@@ -118,3 +118,15 @@ section:not(#team) {
 #team img {
     border-radius: 75px;
 }
+
+#footer div {
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 0px;
+    vertical-align: top;
+    padding: 25px;
+}
+
+#footer ul {
+    padding: 0px;
+}
