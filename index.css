@@ -1,0 +1,37 @@
+/* .main-container {
+  display: grid;
+  grid-template-rows: auto;
+} */
+
+.tagline {
+  background: aquamarine;
+  display: grid;
+
+  grid-template-rows: 35% 1fr 1fr 1fr ;
+  font-size: 1.5em
+
+
+}
+.tagline h1 {
+  font-size: 2em;
+  grid-row: 1;
+  justify-self: center;
+  padding: 8px
+}
+
+.tagline sub {
+  grid-row: 2;
+  justify-self: center
+
+
+}
+.tagline a {
+  grid-row: 3;
+  justify-self: center;
+  border-radius: 15px;
+  border: 3px solid;
+  padding: 8px;
+  border-color: black
+
+}
+
