@@ -1,0 +1,9 @@
+/* CSS Startly */
+   
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  list-style-type: none;
+  text-align: right;
+  padding-top: 10px;
+}
