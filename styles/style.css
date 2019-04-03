@@ -5,6 +5,21 @@ nav ul {
 
 nav li {
     list-style-type: none;
-    
-    /* display: inline-block */
 }
+
+.intro {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+}
+
+.intro sub {
+    margin-bottom: 5vh;
+}
+
+/* h1, sub, a {
+    border-style: dotted;
+} */
