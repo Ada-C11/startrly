@@ -1,0 +1,120 @@
+body, a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 64, 64);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: grey;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(23, 1, 32);
+    padding: 0px;
+}
+
+sub {
+    font-weight: bold;
+    font-size: 1em;
+    display:block;
+    padding: 35px;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    display: block;
+    height: 3em;
+    background-color: rgb(254, 251, 220);
+}
+
+nav ul {
+    padding: 12px;
+    margin: 0px;
+    display: grid;
+    grid-template: 100% / 60% 20% 20%;
+}
+
+nav li {
+    margin-left: 10px;
+    display: inline;
+}
+
+nav li:hover {
+    color: rgb(23, 1, 32);
+}
+
+blockquote {
+    font-style: italic;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+blockquote + p {
+    text-align: right;
+    font-style: italic;
+}
+
+blockquote + p::before {
+    content: "--";
+}
+
+#intro {
+    text-align: center;
+    padding: 10%;
+}
+
+#trynow, #about {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#intro a {
+    padding: 5px;
+    width: 15em;
+    height: 3em;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    
+}
+
+.quote {
+    line-height: 2em;
+    padding: 10%;
+}
+
+#why {
+    padding: 5%;
+}
+
+#why ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#why li {
+    padding: 25px;
+}
+
+#why li img {
+    float:left;
+    margin-right: 10px;
+}
+
+section:not(#team) {
+   border-bottom: 2px solid grey;
+}
+
+#team img {
+    border-radius: 75px;
+}
