@@ -27,8 +27,29 @@ nav ul {
   flex-wrap: wrap;
   text-align: center;
   padding-top: 20px;
+  font-style: italic;
 }
 
 .quote1 blockquote + p:before {
   content: "--";
+}
+
+.content {
+  text-align: center;
+}
+
+.content ul{
+  display: inline-block;
+  list-style-type: none;
+  /* text-align: right; */
+}
+
+.quote2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 25px);
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
 }
