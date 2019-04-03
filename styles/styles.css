@@ -1,0 +1,23 @@
+.site-container {
+  display: grid;
+  grid-template-rows: 0.25fr 1.25fr 1fr 1fr 1fr 2fr 1fr 0.75fr;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.left {
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.nav-right {
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
