@@ -15,3 +15,20 @@ nav ul {
   text-align: center;
   padding-top: 5px;
 }
+
+.tagline {
+  font-size: 25px;
+}
+
+.quote1{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 25px);
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.quote1 blockquote + p:before {
+  content: "--";
+}
