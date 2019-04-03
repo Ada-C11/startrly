@@ -1,0 +1,22 @@
+/* font-family: 'PT Mono', monospace;
+font-family: 'Montserrat', sans-serif; */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-container ul {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-container .about {
+  align-self: center;
+}
+
+/* nav ul li {
+  display: inline;
+
+} */
