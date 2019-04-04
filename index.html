@@ -2,35 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel=StyleSheet href="styles/normalize.css" type="text/css">
+    <link rel=StyleSheet href="styles/style.css" type="text/css">
     <title>Startrly</title>
   </head>
+
   <body>
-    <div>
 
-
-      <nav>
-        <ul>
-          <li>
-            Startrly
-          </li>
-          <li>
-            Try Now!
-          </li>
-          <li>
-            About
-          </li>
-        </ul>
-      </nav>
-
-
-      <section>
+    <nav>
+      <ul class="navigation_bar">
+        <li>
+          Startrly
+        </li>
+        <li>
+          Try Now!
+        </li>
+        <li>
+          About
+        </li>
+      </ul>
+    </nav>
+   
+    <main>
+      <section class="title_and_tagline">
         <h1>Startrly</h1>
         <sub>A catchy tagline for a great solution</sub>
-        <a href="#">Some Call to Action</a>
+        <a id="button" href="#">Some Call to Action</a>
       </section>
 
-
-      <section>
+      <section class="lorem_quote">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </blockquote>
@@ -40,25 +40,27 @@
       </section>
 
 
-      <section>
+      <section class="why_section">
         <h2>Why?</h2>
-        <ul>
+        <ul id="why_list">
           <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Comfortable</strong>
-            <p>
+            <img src="https://www.placecage.com/c/100/100" />
+            <div class="comfortable">
+              <strong>Comfortable</strong>
+              <p>
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
-            </p>
+              </p>
+            </div>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="https://www.placecage.com/c/100/100" />
             <strong>Robust</strong>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="https://www.placecage.com/c/100/100" />
             <strong>Convenient</strong>
             <p>
               Itaque earum rerum hic tenetur a sapiente delectus.
@@ -68,7 +70,7 @@
       </section>
 
 
-      <section>
+      <section class="second_quote">
         <blockquote>
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </blockquote>
@@ -78,7 +80,7 @@
       </section>
 
 
-      <section>
+      <section class="team_profiles">
         <h2>Meet the team</h2>
         <ul>
           <li>
@@ -110,7 +112,7 @@
       </section>
 
 
-      <section>
+      <section class="sponsers">
         <h2>Sponsors</h2>
         <ul>
           <li>
@@ -132,7 +134,7 @@
       </section>
 
 
-      <section>
+      <section class="footer">
         <div>
           <h3>Support</h3>
           <ul>
@@ -166,6 +168,6 @@
         </div>
       </section>
 
-    </div>
+    </main>
   </body>
 </html>
