@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 75vw;
+    margin: auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li:first-child {
+    width: 40vw;
+    background-color: green; 
+    display: inline-block;
+} 
+
+nav li:nth-child(2) {
+    width: 15vw;
+    background-color: lightgreen; 
+    display: inline-block;
+}
+
+nav li:last-child {
+    width: 15vw;
+    background-color: lightblue; 
+    display: inline-block;
+}  
+
