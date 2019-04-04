@@ -13,11 +13,28 @@ nav li {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: red;
+    /* background-color: red; */
+    border-bottom: 1px solid grey;
 }
 
 .intro sub {
     margin-bottom: 5vh;
+}
+
+.testimonial {
+    /* display: flex; */
+    margin-top: 10vh;
+    height: 25vh;
+    /* flex-direction: row; */
+    text-align: center;
+}
+
+.testimonial p {
+    background-color: olive;
+    text-align: right;
+    margin-top: 10vh;
+    margin-right: 25vh;
+    
 }
 
 /* h1, sub, a {
