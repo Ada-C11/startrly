@@ -32,8 +32,6 @@ nav li:nth-child(2) {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: ;
-  color: ;
 }
 
 .intro h1 {
@@ -44,6 +42,9 @@ nav li:nth-child(2) {
   justify-content: center;
   align-self: center;
   flex-direction: row;
+  font-size: 6em;
+  font-weight: bold;
+  color: #D6CE15;
 }
 
 .intro h1:hover {
@@ -138,10 +139,10 @@ nav li:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient()
 }
 
 blockquote {
-  font-family: "Times New Roman", Times, Serif;
   font-size: 1.5em;
   font-style: italic;
   line-height: 1.5em;
@@ -167,7 +168,6 @@ blockquote + p {
   margin-right: 20%;
   font-size: 1.5em;
   font-style: italic;
-  font-family: "Times New Roman", Times, Serif;
 }
 
 blockquote + p::before {
@@ -298,3 +298,15 @@ blockquote + p::before {
   margin-top: -11px;
 }
 
+body {
+  font-family: 'Lora', serif;
+  background-color: #F4F4F4;
+  color: #373737;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #C0B283;
+ }
