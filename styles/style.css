@@ -22,21 +22,50 @@ nav li {
 }
 
 .testimonial {
-    /* display: flex; */
     margin-top: 10vh;
     height: 25vh;
-    /* flex-direction: row; */
-    text-align: center;
+    text-align: left;
 }
 
 .testimonial p {
-    background-color: olive;
+    /* background-color: olive; */
     text-align: right;
     margin-top: 10vh;
     margin-right: 25vh;
     
 }
 
-/* h1, sub, a {
-    border-style: dotted;
-} */
+/* .selling-points {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.selling-points ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.selling-points ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.selling-points ul li {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.selling-points strong,
+.selling-points p {
+    color: red;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.selling-points h2 {
+    text-align: center;
+}  */
