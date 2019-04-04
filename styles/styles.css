@@ -1,5 +1,17 @@
 /* General Styling */
-.intro, h1, h2 {
+html {
+	font-family: 'Nunito', Georgia, Times, serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+  color: grey;
+}
+
+.intro, .team, h1, h2 {
   text-align: center;
 }
 
@@ -16,17 +28,22 @@ nav ul {
 }
 
 /* Intro Section */
+.intro {
+  background-color: lightgrey;
+  padding: 2em;
+}
+
 sub {
   display: block;
-  margin: 2em;
+  margin-bottom: 3em;
 }
 
 .intro [href] {
   width: 25%;
-  padding: .25em;
-  border: .25em solid lightgray;
+  border: .25em solid gray;
   border-radius: 5px;
   align: center;
+  padding: .5em;
 }
 
 /* Quote Section */
@@ -45,4 +62,41 @@ blockquote::before, blockquote::after {
 
 .quote p::before {
   content: "--";
+}
+
+/* Why Section */
+.why ul{
+  display: flex;
+  align-self: center;
+}
+
+.why ul li p, strong{
+  display: flex;
+  flex-direction: column;
+}
+
+.why img {
+  display: block;
+}
+
+/* Team Section */
+.team ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.team img {
+  display: block;
+  border-radius: 50%;
+}
+
+/* Sponsors Section */
+.sponsors ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Footer Section */
+.footer {
+
 }
