@@ -19,3 +19,127 @@
     list-style-type: none;
     display: flex;
 }
+
+.title-section {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 4;
+  }
+  
+.title {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%
+}
+  
+.top-quote-block {
+    grid-row: 3 / 4;
+    grid-column: 1 / span 4;
+}
+  
+#quote-one {
+    background-color: orange;
+    padding: 3%
+}
+
+.why-company-section {
+    grid-row: 4 / 5;
+    grid-column: 1 / span 4;
+}
+  
+.about-company {
+    background-color: lightblue;
+    padding: 5%
+}
+  
+.about-company h2 {
+    display: flex;
+    justify-content: center;
+}
+  
+.about-company ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+  
+.second-quote-block {
+    grid-row: 5 / 6;
+    grid-column: 1 / span 4;
+}
+  
+#quote-two {
+    background-color: lightpink;
+    padding: 3%
+}
+  
+.meet-team {
+    grid-row: 6 / 7;
+    grid-column: 1 / span 4;
+}
+  
+.team {
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    padding: 3%
+}
+  
+.team > h2 {
+    display: flex;
+    justify-content: center;
+}
+  
+.team > ul {
+    display: flex;
+  /*   flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+  
+.team > ul img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+  
+.all-sponsors-section {
+    grid-row: 7 / 8;
+    grid-column: 1 / span 4;
+}
+  
+.sponsors {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    padding: 5%
+}
+  
+.sponsors h2 {
+    display: flex;
+    justify-content: center;
+}
+  
+.sponsors ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+  /* .support-and-about {
+    display: flex;
+  } */
+  /* .support-and-about .support { */
+  /*   background-color: tomato; */
+  /*   grid-row: 8 / 9; */
+  /*   grid-column: 1 / 2; */
+  /*   display: flex */
+  /*    padding: 5% */
+  /* } */
+  
+  /* .about { */
+  /*   background-color: purple; */
+  /*   grid-row: 8; */
+  /*   grid-column: 2 / 3 */
+  /*   padding: 5% */
+  /* } */
+  
