@@ -6,6 +6,7 @@ nav ul {
   list-style-type: none;
   text-align: right;
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .welcome {
@@ -14,12 +15,23 @@ nav ul {
   grid-template-rows: repeat(2, 75px);
   text-align: center;
   padding-top: 5px;
+  padding-bottom: 40px;
 }
 
 .tagline {
   font-size: 25px;
 }
 
+a[href="#"]{
+    background-color: white; /* Green */
+    border: 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 .quote1{
   display: grid;
@@ -27,8 +39,11 @@ nav ul {
   grid-template-rows: repeat(3, 25px);
   flex-wrap: wrap;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
   font-style: italic;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 65px;
 }
 
 .quote1 blockquote + p:before {
@@ -38,14 +53,18 @@ nav ul {
 .content {
   text-align: center;
   padding-top: 80px;
+  border-style: solid;
+  border-width: 1px;
+
 }
 
 .content ul{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
-  text-align: right;
+  text-align: center;
   font-size: 16px;
+  
 }
 
 .quote2 {
@@ -56,13 +75,35 @@ nav ul {
   text-align: center;
   padding-top: 80px;
   font-style: italic;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .quote2 blockquote + p:before {
   content: "--";
 }
 
+.team {
+  padding-top: 80px;
+  text-align: center;
+}
 .team ul {
-  white-space: wrap;
+  grid-row: 2 span 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 280px;
+  margin-right: 280px;
   list-style-type: none;
+}
+
+.team ul li img{
+  border-radius: 55%;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+}
+
+.team ul li > * {
+  padding: 10px;
 }
