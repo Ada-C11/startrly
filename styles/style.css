@@ -76,3 +76,62 @@ nav li:nth-child(2) {
   padding: 0 30px;
   border: solid 1px;
 }
+
+.intro a:hover {
+  font-size: 26px;
+  line-height: 74px;
+  font-weight: bold;
+  color: ;
+  padding: 0 30px;
+  border: solid 1px;
+  border-color: ;
+  border-radius:;
+  background:;
+}
+
+.quote {
+  grid-row-start: 3;
+  border-top: ;
+  border-bottom: ;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+blockquote {
+  font-family: "Times New Roman", Times, Serif;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.5em;
+  margin-left: 20%;
+  margin-right: 20%;
+  quotes: """ """;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.quote blockquote {
+}
+
+blockquote + p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: "Times New Roman", Times, Serif;
+}
+
+blockquote + p::before {
+  content: "--";
+  margin-right: 6px;
+}
+
