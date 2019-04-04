@@ -38,8 +38,17 @@ nav ul li:nth-child(2) {
   justify-content: space-around;
 }
 
-.why-startrly h2 {
+.why-startrly h2{
   text-align: center;
+}
+.why-startrly ul {
+  display: flex;
+}
+.why-startrly li {
+  display: flex;
+}
+.why-startrly p {
+  margin: 0 0 0 10px; 
 }
 .meet-team ul {
   display: flex;
