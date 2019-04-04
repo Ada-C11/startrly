@@ -62,3 +62,17 @@ nav li:nth-child(2) {
   font-size: 1.5em;
   font-weight: 500;
 }
+
+.intro a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  font-size: 26px;
+  line-height: 74px;
+  font-weight: bold;
+  color: ;
+  padding: 0 30px;
+  border: solid 1px;
+}
