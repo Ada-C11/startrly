@@ -19,6 +19,14 @@ ul {
   list-style: none;
 }
 
+/* Divider Line */
+section:not(.footer)::after {
+  display: block;
+  content: "";
+  border-top: 1px dashed grey;
+  margin-top: 2em;
+}
+
 /* Top Nav Bar*/
 nav ul {
   display: grid;
