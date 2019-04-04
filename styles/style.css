@@ -103,6 +103,19 @@ nav li:nth-child(2) {
   align-items: center;
 }
 
+.why ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.why li {
+  margin: 20px;
+  list-style: none;
+  width: 33%;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  grid-template-columns: 114px 1fr;
+}
 
 .quote {
   grid-row-start: 3;
