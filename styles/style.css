@@ -272,3 +272,16 @@ blockquote + p::before {
 .footer ul {
   list-style: none;
 }
+
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 8%;
+}
+
+.support ul {
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
