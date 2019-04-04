@@ -3,7 +3,7 @@ body {
 }
 .main-container {
   display: grid;
-  width: 1000px;
+  width: 1fr;
   height: auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
@@ -22,7 +22,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1.25vw;
+  font-size: 1rem;
 }
 
 nav ul li:nth-child(2) {
@@ -41,13 +41,17 @@ nav ul li:nth-child(2) {
 .why-startrly h2{
   text-align: center;
 }
+
 .why-startrly ul {
   display: flex;
 }
+
+
 .why-startrly li {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 0 0 10px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .meet-team ul {
@@ -73,8 +77,10 @@ li {
   clear: left;
 }
 
-.footer {
+.support {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: left;
 }
+
 
