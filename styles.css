@@ -1,0 +1,30 @@
+.quote {
+    display: flex;
+    display: grid;
+}
+
+blockquote {
+    justify-content: center;
+    font-size: 2em;
+    font-style: italic;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+blockquote::before, blockquote::after {
+    content: '"';
+}
+
+.quote p::before {
+    content: "--"
+}
+
+.quote p {
+    font-style: italic;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: 4em;
+}
+
+
+
