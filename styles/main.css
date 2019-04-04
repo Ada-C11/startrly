@@ -6,8 +6,10 @@ li {
   list-style-type: none;
 }
 
+
 li img {
   display: inline-block;
+  margin-bottom: 2px;
 }
 
 li p {
@@ -44,7 +46,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 50px 20px;
 }
 
 body {
@@ -56,6 +58,10 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.container>section.welcome {
+  margin-top: 5rem;
 }
 
 .why li {
@@ -76,6 +82,7 @@ a.button {
   padding: 1em 1.5em;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 2rem;
 }
 
 .welcome a:hover {
@@ -90,16 +97,15 @@ a.button {
 }
 
 .team li {
-  flex-flow: column wrap;
   width: 33%;
-  margin-top: 2rem;
   margin-bottom: 2rem;
-  text-align: center
+  text-align: center;
 }
 
 .team img {
   border-radius: 100%;
   border: 6px solid pink;
+  margin: 1rem;
 }
 
 .testimonial {
@@ -108,6 +114,7 @@ a.button {
 
 .testimonial p {
   align-self: flex-end;
+  padding-right: 3em;
   font-style: italic;
   font-family: 'Noto Serif', serif;
   font-size: 1rem;
@@ -117,7 +124,33 @@ a.button {
 blockquote {
   font-style: italic;
   font-family: 'Noto Serif', serif;
-  font-size: 1.5rem;
-  line-height: 150%;
+  font-size: 1.25em;
+  line-height: 175%;
 }
 
+.sponsors ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; 
+}
+
+footer {
+  grid-column: 1 / span 3;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+footer div {
+  margin: 4rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer ul li {
+  margin-top: 5px;
+}
