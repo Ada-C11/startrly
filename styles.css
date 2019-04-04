@@ -1,3 +1,25 @@
+/* top nav */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-weight: bold; 
+}
+
+#startrly {
+    margin-right: auto;
+}
+
+#trynow {
+    margin-left: 25em;
+}
+
+#about {
+    margin-left: auto;
+    margin-right: 4em;
+}
+
+
+/* quote sections */
 .quote {
     display: flex;
     display: grid;
