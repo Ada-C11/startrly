@@ -106,7 +106,8 @@
 
 #quote-one p {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    padding-right: 3%
 }
 
 .why-company-section {
@@ -140,8 +141,14 @@
 }
   
 #quote-two {
-    background-color: lightpink;
+    /* background-color: lightpink; */
     padding: 3%
+}
+
+#quote-two p {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%
 }
   
 .meet-team {
@@ -164,15 +171,31 @@
 .team > ul {
     display: flex;
   /*   flex-wrap: wrap; */
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
 }
-  
+
+.team > ul li {
+    padding: 3%;
+    flex-wrap: nowrap
+}
+
 .team > ul img {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
+    border-radius: 50%;
+    padding: 15%;
     
 }
-  
+
+/* .team > ul img:first-child {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start
+} */
+
 .all-sponsors-section {
     grid-row: 7 / 8;
     grid-column: 1 / span 4;
@@ -196,6 +219,13 @@
     padding: 3%;
 } 
 
+.sponsors ul li {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    
+}
+
 li {
     list-style-type: none;
 }
@@ -213,11 +243,15 @@ li {
     display: flex;
   } */
   .support-and-about {
-    background-color: tomato;
+    /* background-color: tomato; */
     grid-row: 8 / 9;
     grid-column: 1 / 2;
     display: flex;
-    padding: 5% 
+    /* padding: 5%  */
+  }
+
+  .support-and-about div {
+      padding: 5%
   }
   
   /* .about { */
