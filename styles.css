@@ -1,0 +1,118 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12pt;
+
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(32, 32, 32);
+  background: rgb(129, 125, 190);
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(32, 32, 32);
+  background: rgb(184, 84, 84);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16pt;
+  align-items: center;
+  height: 250px;
+  padding-bottom: 50px;
+
+}
+
+.section-header > a {
+  border: 1px solid black;
+  font-size: 12pt;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.section-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(32, 32, 32);
+  background: rgb(77, 156, 130);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  align-items: center;
+  height: 250px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.quote-signature {
+  align-self: flex-end;
+}
+
+.section-why {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(32, 32, 32);
+  background: rgb(183, 201, 133);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16pt;
+  align-items: center;
+  height: 400px;
+}
+
+.section-why > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.section-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(32, 32, 32);
+  background: rgb(201, 133, 186);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16pt;
+  align-items: center;
+  height: 600px;
+}
+
+.section-team > ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;  
+  font-size: 12pt;
+
+
+
+
+}
+
+.section-team ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  padding-bottom: 10px;
+
+}
+
+.section-team img {
+  clip-path: circle(60px at center);
+
+}
