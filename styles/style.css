@@ -285,3 +285,16 @@ blockquote + p::before {
   margin-top: -10px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 14%;
+}
+
+.about ul {
+  margin-left: -4px;
+  margin-top: -11px;
+}
+
