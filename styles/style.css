@@ -1,0 +1,33 @@
+
+nav {
+  background-color: dodgerblue;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav li {
+  text-shadow: 0px 0px 3px black;
+}
+
+nav ul {
+  list-style: none;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav li:first-child {
+  margin-left: 25px;
+}
+
+nav li:last-child {
+  grid-column-start: 5;
+  margin-right: 25px;
+}
+
+nav li:nth-child(2) {
+  grid-column-start: 4;
+}
+
