@@ -72,7 +72,6 @@ nav li:nth-child(2) {
   font-size: 26px;
   line-height: 74px;
   font-weight: bold;
-  color: ;
   padding: 0 30px;
   border: solid 1px;
 }
@@ -81,7 +80,6 @@ nav li:nth-child(2) {
   font-size: 26px;
   line-height: 74px;
   font-weight: bold;
-  color: ;
   padding: 0 30px;
   border: solid 1px;
   border-color: ;
@@ -308,4 +306,13 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   color: #C0B283;
+  font-size: 2em;
+ }
+
+ .support, .about{
+   font-size: .5em;
+ }
+
+ footer {
+  font-size: 1em;
  }
