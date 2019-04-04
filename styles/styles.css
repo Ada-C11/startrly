@@ -1,6 +1,10 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .site-container {
   display: grid;
-  grid-template-rows: 0.25fr 1.25fr 1fr 1fr 1fr 2fr 1fr 0.75fr;
+  grid-template-rows: 0.25fr 1fr .75fr .75fr .75fr 1.75fr .75fr 0.5fr;
 }
 
 nav ul {
@@ -20,4 +24,23 @@ nav ul li {
 .nav-right {
   margin-right: 7.5%;
   margin-left: 7.5%;
+}
+
+#site-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#site-intro sub {
+  margin-top: 20px;
+}
+
+#site-intro a {
+  margin-top: 40px;
+  text-decoration: none;
+  border: lightgray solid 1.5px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
 }
