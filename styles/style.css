@@ -7,19 +7,8 @@ flex-flow:  row wrap;
 /* Style top row */
 .nav_row {
 display: grid;
-grid-template: 100px / 1fr 1fr 1fr 1fr 1fr
-} 
-
-.nav_elem_2 {
-  grid-column-start: 4;
-} 
-
-.nav_elem_3 {
-  grid-column-start: 5;
-} 
-
-.nav_row  {
-  list-style-type: none;
+grid-template: 100px / 3fr 1fr 1fr;
+list-style-type: none;
 }
 
 .nav_row li {
@@ -68,6 +57,33 @@ grid-template: 100px / 1fr 1fr 1fr 1fr 1fr
   text-align: center;
 } 
 
-/* style why-box section */
+/* style why-boxes section */
+/* having tourbles with wrapping text */
+.why_boxes {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-content: space-around;
+} 
+
+.why_box {
+  display: grid;
+  grid-template: 1em 70px 30px / 3fr 1fr 3fr 1fr 3fr 1fr;
+}
+
+.why_title {
+  grid-column: 2 / -2;
+}
+
+.why_desc {
+  grid-column: 2 / -3; 
+  grid-row: 2 / -3;
+} 
+
+.why_img {
+  width: 100px;
+  height: 100px;
+}
+
 
 
