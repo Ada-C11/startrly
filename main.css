@@ -4,19 +4,62 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.nav-container ul {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
+.container{
+  display: grid;
+  grid-template: 1fr 3fr 2fr 2fr 2fr 3fr 2 fr 1fr / 2fr 1fr 1fr;
+
+
+}
+
+.nav {
+
+
+}
+.nav ul {
+  /* width: 100%;
+  height: 10%; */
+  display: grid;
+  grid-template: 2
   list-style-type: none;
+  justify-content: space-around;
   align-items: center;
 }
 
-.nav-container .about {
-  align-self: center;
+.startrly {
+  /* move position to left */
+  display: flex;
+  flex-wrap: wrap;
+  align-self: self-start;
 }
 
 /* nav ul li {
   display: inline;
 
 } */
+.tagline {
+
+}
+
+.quote1 {
+
+}
+
+.why {
+
+}
+
+.quote2 {
+
+}
+
+.team {
+
+}
+
+.sponsors {
+
+}
+
+.footer {
+
+}
