@@ -12,10 +12,13 @@ body {
 .quote {
   display: flex;
   flex-direction: row;
+  font-style: italic;
 }
+
 .quote p {
   margin-top: 10vh;
 }
+
 nav ul {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -43,29 +46,74 @@ nav ul li:nth-child(2) {
 }
 
 .why-startrly ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 30% 30%
+}
+
+.why-startrly li {
+  padding: 1em
+  width: 
+}
+
+.why-startrly img {
+  float: left;
 }
 
 
-.why-startrly li {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
+.meet-team h2 {
+  text-align: center;
 }
 
 .meet-team ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template: 1fr 1fr / repeat(5 1fr);
+  grid-gap: 1rem;
 }
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+}
+
+.b {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.c {
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.d {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 3
+}
+
+.e {
+  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+}
+
+span {
+  display: block;
+  text-align: center;
+}
+.meet-team img {
+  border-radius: 50%
+}
+
+
 .sponsors ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  align-content: center
 }
 
 ul {
