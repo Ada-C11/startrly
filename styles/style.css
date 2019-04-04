@@ -237,3 +237,26 @@ blockquote + p::before {
   border: 2px;
 }
 
+.sponsors {
+  grid-row-start: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px ;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.sponsors li {
+  margin: 10px;
+}
+
