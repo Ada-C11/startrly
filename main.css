@@ -1,65 +1,150 @@
 /* font-family: 'PT Mono', monospace;
 font-family: 'Montserrat', sans-serif; */
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 .container{
   display: grid;
-  grid-template: 1fr 3fr 2fr 2fr 2fr 3fr 2 fr 1fr / 2fr 1fr 1fr;
-
-
+  grid-template: 1fr 2fr 2fr 2fr 2fr 3.5fr 2fr 1.5fr / 2fr 1fr 1fr;
+  grid-template-areas: 
+  "n n n"
+  "t t t"
+  "q1 q1 q1"
+  "w w w"
+  "q2 q2 q2"
+  "team team team"
+  "s s s"
+  "f f f";
 }
 
 .nav {
-
-
+  grid-area: n; 
+  margin: 20px;
+  flex-wrap: wrap;
+  
 }
 .nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   /* width: 100%;
   height: 10%; */
-  display: grid;
-  grid-template: 2
   list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
+  /*justify-content: space-around;
+  align-items: center; */
 }
 
 .startrly {
   /* move position to left */
-  display: flex;
-  flex-wrap: wrap;
-  align-self: self-start;
+ 
 }
 
-/* nav ul li {
-  display: inline;
+.try {
+text-align: right;
+color: pink;
+padding-left: 380px;
+}
 
-} */
+.about {
+  padding-right: 80px;
+
+}
+
 .tagline {
-
+  grid-area: t;
+  text-align: center;
+  font-weight: bold;
 }
 
+#startrly {
+  font-family: 'Heebo', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  margin-top: -30px;
+  padding-bottom: -20px;
+}
+sub {
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+  margin-top: 2px;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  font-size: 2em;
+  }
+
+button:hover {
+  background-color: pink;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 15px;
+  
+}
 .quote1 {
-
+  grid-area: q1;
+  margin-top: -50px;
+}
+blockquote {
+  /* background: #f9f9f9; */
+  /* border-left: 10px solid #ccc; */
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
+}
+blockquote:before {
+  color: #000;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #000;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 1em;
+  vertical-align: -0.5em;
 }
 
+.author {
+  text-align: right;
+  margin-right: 30px;
+  padding-right: 40px;
+  font-style: italic;
+}
 .why {
-
+  grid-area: w;
 }
 
 .quote2 {
-
+  grid-area: q2;
 }
 
 .team {
-
+  grid-area: team;
 }
 
 .sponsors {
-
+  grid-area: s;
 }
 
 .footer {
+  grid-area: f;
+}
 
+.footer ul li {
+  display: inline;
 }
