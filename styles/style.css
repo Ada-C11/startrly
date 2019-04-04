@@ -89,6 +89,21 @@ nav li:nth-child(2) {
   background:;
 }
 
+.why {
+  grid-row-start: 4;
+  margin-top: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px ;
+}
+
+.why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .quote {
   grid-row-start: 3;
   border-top: ;
