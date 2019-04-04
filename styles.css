@@ -111,6 +111,16 @@ blockquote + p::before {
     margin-right: 10px;
 }
 
+#team ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#team span {
+    text-align: center;
+    display: block;
+}
+
 section:not(#team) {
    border-bottom: 2px solid grey;
 }
@@ -118,6 +128,8 @@ section:not(#team) {
 #team img {
     border-radius: 75px;
 }
+
+
 
 #footer div {
     font-size: 0.8em;
