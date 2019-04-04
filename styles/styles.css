@@ -5,7 +5,7 @@ html {
 
 .site-container {
   display: grid;
-  grid-template-rows: 0.25fr 1fr .75fr .75fr .75fr 1.75fr .75fr 0.5fr;
+  grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .5fr 0.3fr;
 }
 
 nav ul {
@@ -33,19 +33,23 @@ nav ul li {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
+  justify-content: flex-start;
+  font-size: 1.5em;
 }
 
 #site-intro sub {
-  margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 #site-intro a {
-  margin-top: 40px;
+  margin-top: 75px;
   text-decoration: none;
-  border: lightgray solid 1.5px;
-  padding: 10px;
-  border-radius: 5px;
+  border: lightgray solid 3px;
+  padding: 20px;
+  border-radius: 10px;
   color: black;
+  font-weight: 300;
+  font-size: .9em;
 }
 
 section:not(#sponsors):before {
