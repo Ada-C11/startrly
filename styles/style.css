@@ -185,3 +185,55 @@ blockquote + p::before {
   flex-direction: column;
   justify-content: center;
 }
+
+.team {
+  grid-row-start: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.team ul {
+  margin-left: -36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.top-pics {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.bottom-pics {
+  display: flex;
+  flex-direction: row;
+}
+
+.team li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team li {
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.team img {
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 5px;
+  border: 2px;
+}
+
