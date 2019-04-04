@@ -1,27 +1,8 @@
-/* .container {
+.container {
     display: grid;
-} */
-
-
-/* #startrly {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-} */
-
-
-/* #try-about {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-} */
-
-
-/* .main-area {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-} */
+    border: solid black 2px;
+    /* flex-wrap: wrap; */
+}
 
 h1 {
     font-family: 'Tangerine', cursive;
@@ -38,6 +19,7 @@ nav ul li:hover {
 
 nav {
     background-color: aquamarine;
+    flex-wrap: wrap;
 }
 
 section {
@@ -51,10 +33,16 @@ section {
     /* font-family: 'Tangerine', cursive; */
     /* font-size: 20px; */
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 nav ul li:nth-child(2) {
     grid-column: 3 / 4;
+}
+
+#main {
+    background-color: rgb(183, 133, 212);
+    flex-wrap: wrap;
 }
 
 #startrly {
@@ -75,15 +63,61 @@ nav ul li:nth-child(2) {
     font-size: 15px;
 }
 
-#quote {
+.quote {
     display: flex;
     text-align: center;
     font-style: italic;
     justify-content: space-around;
 }
 
-#from {
+.from {
     text-align: right;
     font-style: italic;
     padding-right: 250px;
+}
+
+.blockquotes {
+    background-color: cornflowerblue;
+    flex-wrap: wrap;
+}
+
+.heading {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.why-images {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.first-three {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.last-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.support {
+    display: flex;
+    justify-content: space-evenly;
 }
