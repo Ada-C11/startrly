@@ -46,10 +46,10 @@ nav ul li:nth-child(2) {
 }
 .why-startrly li {
   display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 0 10px;
 }
-.why-startrly p {
-  margin: 0 0 0 10px; 
-}
+
 .meet-team ul {
   display: flex;
   flex-direction: row;
