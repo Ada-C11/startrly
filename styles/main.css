@@ -1,0 +1,78 @@
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+li {
+  list-style-type: none;
+}
+
+li img {
+  display: inline-block;
+}
+
+li p {
+  display: flex;
+}
+
+nav li {
+  display: inline-flex;
+  padding: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 3fr 3fr 3fr;
+  justify-content: center;
+  margin: 0 2%;
+}
+
+.container>section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+section ul {
+  display: flex;
+  flex-direction: row;
+  /* align-content: space-around; */
+  justify-content: space-around;
+  margin: 3%;
+}
+
+section.why li {
+  display: inline-flex;
+}
+
+section.welcome a {
+  border: solid 2px pink;
+  border-radius: 2px;
+  color: pink;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+}
+
+section.team ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center
+}
+
+section.team li {
+  flex-direction: column;
+  
+  width: 33%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center
+}
+
+section.team img {
+  border-radius: 100%;
+  border: 6px solid pink;
+}
+
+
