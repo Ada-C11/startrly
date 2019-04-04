@@ -44,7 +44,7 @@ nav ul li {
 #site-intro a {
   margin-top: 75px;
   text-decoration: none;
-  border: lightgray solid 3px;
+  border: lightgray solid 4px;
   padding: 20px;
   border-radius: 10px;
   color: black;
@@ -64,10 +64,11 @@ section:not(#sponsors):before {
   flex-direction: column;
   justify-content: space-around;
   font-style: italic;
+  font-size: 1.2em;
 }
 
 blockquote {
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 blockquote:before, blockquote:after {
@@ -78,9 +79,9 @@ blockquote:after {
   content: close-quote;
 }
 
-blockquote + p {
+.author {
   text-align: right;
-  padding-right: 5%;
+  padding-right: 7%;
 }
 
 .author:before {
