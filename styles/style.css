@@ -1,0 +1,49 @@
+.header {
+  height: 20vh;
+  width: 30vh;
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.title {
+  background: lightblue;
+}
+
+.navigation {
+  background: lightcoral;
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+
+.startrly {
+  background: tomato;
+}
+
+.unordered_list {
+  list-style-type: none;
+}
+
+.first_quote {
+  background: green;
+}
+
+.product_name {
+  background: white;
+}
+
+.product_link {
+  background: navy;
+}
+
+.about_link {
+  background: tomato;
+}
+
+/* 
+.first_quote {
+  background: lightgreen;
+} */
+
+.second_quote {
+  background: lightsalmon;
+}
