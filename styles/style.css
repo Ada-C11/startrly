@@ -38,11 +38,9 @@ nav ul li:nth-child(2) {
   justify-content: space-around;
 }
 
-.why-startrly {
-  height: 50vh
-  display: flex;
+.why-startrly h2 {
+  text-align: center;
 }
-
 .meet-team ul {
   display: flex;
   flex-direction: row;
@@ -57,8 +55,13 @@ nav ul li:nth-child(2) {
   justify-content: space-around;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 li {
   list-style: none;
+  clear: left;
 }
 
 .footer {
