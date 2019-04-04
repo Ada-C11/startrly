@@ -6,3 +6,16 @@
   /*   grid-row-gap: 15px; */
   }
 
+.top-nav-bar {
+    grid-column: 1 / span 4;
+}
+  
+.navigation {
+    background-color: tomato;
+    display: flex;
+}
+  
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
