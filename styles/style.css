@@ -6,7 +6,12 @@ nav ul {
   list-style-type: none;
   text-align: right;
   padding-top: 10px;
+  padding-bottom: 80px;
   font-weight: bold;
+}
+
+h1{
+  font-size: 40px;
 }
 
 .welcome {
@@ -14,23 +19,27 @@ nav ul {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 75px);
   text-align: center;
-  padding-top: 5px;
   padding-bottom: 40px;
 }
 
 .tagline {
+  padding-top: 20px;
   font-size: 25px;
 }
 
 a[href="#"]{
-    background-color: white; /* Green */
-    border: 1px;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  display: inline-block;
+  background-color: white; 
+  border: 2px solid lightgrey;
+  border-radius: 10px; 
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  width: 250px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .quote1{
@@ -41,11 +50,19 @@ a[href="#"]{
   text-align: center;
   padding-top: 60px;
   font-style: italic;
+  font-size: 21px;
   border-style: solid;
   border-width: 1px;
   padding-bottom: 65px;
 }
 
+.quote1 p{
+  margin-left: 300px;
+}
+
+.quote1 blockquote:before, .quote1 blockquote:after {
+    content: '"';
+}
 .quote1 blockquote + p:before {
   content: "--";
 }
@@ -62,9 +79,21 @@ a[href="#"]{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
-  text-align: center;
+  text-align: left;
+  padding-top: 50px;
   font-size: 16px;
-  
+}
+
+.content ul li img{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100px;
+  width: 100px;
+  padding-left: 10px; 
+  padding-bottom: 25px;
+  float: left
 }
 
 .quote2 {
@@ -73,12 +102,20 @@ a[href="#"]{
   grid-template-rows: repeat(3, 25px);
   flex-wrap: wrap;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
   font-style: italic;
+  font-size: 21px;
   border-style: solid;
   border-width: 1px;
+  padding-bottom: 65px;
 }
 
+.quote2 p{
+    margin-left: 300px;
+}
+.quote2 blockquote:before, .quote2 blockquote:after {
+  content: '"';
+}
 .quote2 blockquote + p:before {
   content: "--";
 }
@@ -97,6 +134,16 @@ a[href="#"]{
   list-style-type: none;
 }
 
+.team ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  padding: 25px;
+  padding-left: 2
+
+}
+
 .team ul li img{
   border-radius: 55%;
   border-style: solid;
@@ -106,4 +153,18 @@ a[href="#"]{
 
 .team ul li > * {
   padding: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+.sponsors{
+  text-align: center;
+}
+
+.sponsors ul li {
+  list-style-type: none;
+  
+ 
 }
