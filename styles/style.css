@@ -40,6 +40,8 @@ list-style-type: none;
   border-top-style: solid;
   display: grid;
   grid-template: 1fr 1fr / 100px 1fr repeat(5, 25px) 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .quote {
@@ -55,35 +57,61 @@ list-style-type: none;
 /* style h2 (section headers) x3 */
 .section_header {
   text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 5em;
 } 
 
 /* style why-boxes section */
-/* having tourbles with wrapping text */
+/* having tourbles with wrapping text */ 
+
 .why_boxes {
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -30px;
   list-style-type: none;
-  justify-content: space-around;
-} 
-
-.why_box {
-  display: grid;
-  grid-template: 1em 70px 30px / 3fr 1fr 3fr 1fr 3fr 1fr;
 }
 
-.why_title {
-  grid-column: 2 / -2;
+.why_img {
+  float: left;
 }
 
 .why_desc {
-  grid-column: 2 / -3; 
-  grid-row: 2 / -3;
+  padding: 1em 1em;
+  margin-top: -0.5em;
+}
+
+
+/* meet the team section */
+.team {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.team_box {
+  display: grid;
+  grid-template: 3fr 2em 2em / 1fr;
+  margin: 100px;
+  text-align: center;
+  margin-top: -2em;
 } 
 
-.why_img {
-  width: 100px;
-  height: 100px;
+.team_img {
+  border-radius: 50%;
 }
+
+.name {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+
 
 
 
