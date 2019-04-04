@@ -175,3 +175,13 @@ blockquote + p::before {
   margin-right: 6px;
 }
 
+.second-quote {
+  grid-row-start: 5;
+  border-bottom: 1px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
