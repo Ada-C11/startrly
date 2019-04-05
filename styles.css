@@ -12,6 +12,8 @@
   font-weight: bold;
   margin: 4%;
   list-style-type: none;
+  position: fixed;
+  width: 100%;
 }
 
 .home {
@@ -25,7 +27,7 @@
 }
 
 .about {
-  grid-column: 12;
+  grid-column: 11;
   grid-row: 1;
 }
 /* formatting for header (title, tagline, and link) */
