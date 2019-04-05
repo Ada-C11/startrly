@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans' rel="stylesheet");
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 5px;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+#startrly {
+  margin-right: 400px;
+  margin-left: 1px;
+}
+
+#try-now {
+  margin-left: 400px;
+  margin-right: 300px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+section:first-of-type {
+  text-align: center;
+}
+
+#tagline {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#actionbox { 
+  border: solid lightgrey thin;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  line-height: 5em;
+  padding: 12px;
+  font-size: 1em;
+  background-color: darkred;
+}
+
+#actionbox:hover {
+    color: dimgray;
+}
+
+.quote {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  padding: 30px 15px 15px 15px;
+  text-align: center;
+  border-top: 0.25px solid lightgray;
+
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.cite {
+  text-align: right;
+  padding-right: 200px;
+}
+
+
+#why {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start; 
+  list-style-type: none;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-top: 0.25px solid lightgray;
+  padding-top: 30px;
+}
+
+.image-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+#team-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto auto;
+  list-style-type: none;
+}
+
+#team-container > li > img {
+  border-radius: 50%;
+}
+
+#team-container span {
+  display: block;
+  text-align: center;
+}
+
+#team1 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+#team2 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+#team3 {
+  grid-column-start: 6;
+  grid-row-start: 1;
+}
+
+#team4 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#team5 {
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+
+#sponsor-container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.end-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-top: 0.25px solid lightgray;
+  padding-bottom: 25px;
+}
+
+.end-head {
+  padding-top: 15px;
+  padding-left: 40px;
+  font-size: 11px;
+}
+
+.end-item {
+  font-size: 10px;
+  list-style-type: none;
+}
+
+
