@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Whole page */
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+
+.site-container {
+  display: grid;
+  grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .75fr 0.4fr;
+}
+
+li {
+  list-style-type: none;
+}
+
+section h2 {
+  text-align: center;
+}
+
+#site-intro, .quote, #why ul, #team ul, .team-member, #sponsors ul, #footer-container {
+  display: flex;
+}
+
+#site-intro, .quote, .team-member {
+  flex-direction: column;
+}
+
+section:not(#sponsors):before, footer:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid darkgray;
+  margin: 0 10px 0 10px;
+}
+
+/* Nav bar */
+
+nav ul {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+}
+
+nav ul li {
+  font-weight: bold;
+}
+
+.nav-left {
+  margin-left: 5%;
+}
+
+.nav-right {
+  margin: 0 7.5%;
+}
+
+/* Site intro */
+
+#site-intro {
+  align-items: center;
+  font-weight: bold;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  text-transform: capitalize
+}
+
+#site-intro sub {
+  font-size: 1.5rem;
+}
+
+#site-intro a {
+  margin-top: 75px;
+  text-decoration: none;
+  border: lightgray solid 4px;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 300;
+  font-size: .9em;
+}
+
+#site-intro a:hover {
+  color: #e1e8ed;
+  background-color: #347096;
+}
+
+/* Quote sections */
+
+.quote {
+  justify-content: space-around;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+blockquote {
+  margin: 0 15%;
+}
+
+blockquote:before, blockquote:after {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.author {
+  text-align: right;
+  padding-right: 7%;
+}
+
+.author:before {
+  content: "--"
+}
+
+/* Why section */
+
+#why h2 {
+  padding: 2.5% 0;
+}
+
+#why ul {
+  justify-content: space-evenly;
+}
+
+#why ul li {
+  width: 30%;
+}
+
+#why ul li img {
+  float: left;
+  margin: 0px 10px;
+  vertical-align: top;
+} 
+
+/* Team section */
+
+#team ul {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#team li {
+  margin: 3% 7.5%;
+}
+
+.team-member img {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: .3em;
+  height: 150px;
+  width: 150px;
+}
+
+.team-member span {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* Sponsors section */
+
+#sponsors ul {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#sponsors li {
+  margin: 0 1%;
+}
+
+/* Footer */
+
+#footer-container {
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: #e1e8ed;
+}
+
+#footer-container div {
+  margin: 2% 8%;
+}
+
+#footer-container ul {
+  margin: 0; 
+  padding: 0;
+}
+
