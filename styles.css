@@ -1,11 +1,26 @@
+/* lists */
+li {
+    list-style-type: none;
+}
+
+/* titles */
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
 /* top nav */
 nav ul {
     display: flex;
     justify-content: space-between;
     margin: 2.5em 2em 5em 2em;
-    list-style-type: none;
     font-weight: bold; 
     font-size: 1.5em;
+    flex-wrap: wrap;
 }
 
 #startrly{
@@ -93,15 +108,42 @@ blockquote::before, blockquote::after {
 }
 
 /* the team */
-#teamtitle {
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    
-}
 
 #team {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    flex-flow: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#team > li > img {
+    border-radius: 100%;
+}
+
+/* sponsor */
+.sponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+}
+
+/* footer nav */
+.footernav {
+    border: 1px;
+    border-top-style: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.supportnav {
+    margin-right: auto;
+}
+
+.aboutnav {
+    order: 1;
 }
