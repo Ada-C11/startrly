@@ -172,9 +172,18 @@ blockquote:after {
     padding-left: 10em;
 }
 
-
-/* .footer>.support ul {
+.footer>.support ul {
     align-content: left;
     display: flex;
     flex-direction: column;
-} */
+    margin: 0;
+    padding: 0;
+}
+
+.footer>.about ul {
+    align-content: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
