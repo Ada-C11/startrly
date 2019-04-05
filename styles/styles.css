@@ -1,0 +1,134 @@
+.container {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 3fr 1fr;
+    font-family: Helvetica, sans-serif
+
+}
+
+.container ul {
+    list-style: none
+}
+
+header {
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+
+nav ul {
+    display: flex;
+    flex: row;
+    font-weight: bold
+}
+
+.try {
+    margin-left: 50%;
+    margin-right: 25%
+}
+
+#action {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+    height: 30vh; 
+    
+}
+
+#action sub {
+    font-weight: bold; 
+    font-size: 150%
+}
+
+#lorem {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    font-style: italic;
+    padding: 10%
+}
+
+#lorem p {
+    display: flex;
+    margin-left: auto; 
+}
+
+#ipsum {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    font-style: italic;
+    padding: 10%
+}
+
+#ipsum p {
+    display: flex;
+    margin-left: auto; 
+}
+
+
+.why {
+    display: flex;
+    flex-direction: column;
+}
+
+.why h2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center
+}
+.why ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+
+.why ul li p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right 
+}
+
+.people {
+    display: flex;
+    flex-direction: column
+}
+
+.team ul {
+    display: flex;
+    flex-flow: row wrap; 
+    height: 60vh;
+    justify-content: space-around
+}
+
+.team img {
+border-radius: 100%
+}
+
+.sponsors h2{
+    text-align: center
+}
+.imageline1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.lastimage {
+    display: flex;
+    justify-content: center
+}
+
+footer {
+display: flex;
+justify-content: flex-start
+}
+
+.container>:nth-child(1n + 2) {
+    border-top: .05em lightslategray solid;
+    display: flex;
+}
