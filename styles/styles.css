@@ -1,0 +1,138 @@
+.container {
+    grid-column: 100%;
+    grid-row: 9% repeat(7, 13%)
+    display: grid;
+
+}
+
+.header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: aqua;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 20px 50px 20px;
+}
+
+/* nav ul:first-child {
+    justify-items: flex-start
+}/*  */
+
+
+
+.title {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px 50px 20px;
+}
+
+.title h1 {
+    padding: 10px 20px 50px 20px;
+}
+
+.title sub {
+    padding: 10px 20px 50px 20px;
+}
+
+.title a:hover {
+    background-color: black;
+}
+
+
+.quote {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px 50px 20px;
+}
+
+/* .quote blockquote {
+    white-space: pre-line;
+}
+
+.quote p::before {
+    display: block;
+    content: '\A'; 
+    white-space: pre;
+} */
+
+.why {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 20px 50px 20px;
+}
+
+.why ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.why ul li {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.second-quote {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px 50px 20px;
+}
+
+.team {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 20px 50px 20px;
+}
+
+.team ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.sponsors {
+    grid-column: 1 / 2;
+    grid-row: 7/ 8;
+}
+
+.support {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+}
