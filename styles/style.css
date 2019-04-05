@@ -6,8 +6,16 @@ nav ul {
   list-style-type: none;
   text-align: right;
   padding-top: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   font-weight: bold;
+}
+
+nav ul li:hover {
+  color: turquoise;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;;
 }
 
 h1{
@@ -20,6 +28,7 @@ h1{
   grid-template-rows: repeat(2, 75px);
   text-align: center;
   padding-bottom: 40px;
+  background-color: turquoise;
 }
 
 .tagline {
