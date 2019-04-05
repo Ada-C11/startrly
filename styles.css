@@ -1,5 +1,7 @@
 body {
     margin-top: 6em;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 section {
@@ -34,7 +36,6 @@ h3 {
 }
 
 p {
-    font-family: monospace;
     font-size:14px;
 }
 
@@ -83,7 +84,7 @@ nav ul {
 }
 
 nav li:hover {
-    color: #ffffff;
+    color: #ffffff
 }
 
 nav ul #startrly-logo {
@@ -230,8 +231,7 @@ blockquote:before, blockquote:after {
 
 #team span {
     display:block;
-    font-family: monospace;
-    font-size:1.5em;
+    font-size:1em;
 }
 
 #team li {
@@ -269,11 +269,10 @@ blockquote:before, blockquote:after {
 
 .footer-links {
     margin: 0 100px;
-    font-family: monospace;
 }
 
 .footer-links li {
-    font-size:1.2em;
+    font-size:1em;
 }
 .footer-links li:hover{
     color: #9198e5
