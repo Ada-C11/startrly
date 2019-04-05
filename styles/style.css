@@ -18,6 +18,16 @@ nav li {
     border-bottom: 1px solid grey;
 }
 
+.intro a:link, a:visited {
+    color: gray;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 8px;
+    display: inline-block;
+}
+
 .intro sub {
     margin-bottom: 5vh;
 }
@@ -69,10 +79,6 @@ nav li {
 
     margin: 16px;
 } 
-
-.selling-points p {
-    color: red;
-}
 
 .selling-points strong,
 .selling-points p {
