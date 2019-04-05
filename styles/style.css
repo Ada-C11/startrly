@@ -1,12 +1,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
     margin: auto;
     border: 2px solid blue;
-    display: flex;
-    flex-wrap: wrap; 
-    align-content: center;
 }
 
 nav ul {
@@ -16,11 +12,9 @@ nav ul {
     grid-template-columns: 70% 15% 15%;
 }
 nav {
-    width: 100%;
 }
 
 nav li {
-    width: 100%;
     padding-left: 100px;
     padding-right: 100px;
 } 
@@ -29,7 +23,6 @@ nav li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 #hero h1 {
@@ -45,6 +38,7 @@ nav li {
 
 #hero a { 
     margin-top: 50px;
+    margin-bottom: 75px;
     font-size: 125%;
     text-decoration: none;
     border: 2px solid lightgrey;
@@ -53,61 +47,109 @@ nav li {
     color: black;
 }
 
-section:nth-of-type(2) {
-    background-color: lightgreen;
-    width: 75vw;
+.quote {
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    font-style: italic;  
+    align-items: center;  
+} 
+
+.quote blockquote {
+    text-align: left;
+    font-size: 125%;
+    margin-right: 125px;
+    margin-left: 200px;
+    margin-top: 75px;
+    line-height: 50px;
 }
 
-section:nth-of-type(3) {
-    background-color: lightblue;
-    width: 75vw;
+.quote blockquote::before {
+    content: open-quote;
 }
 
-section:nth-of-type(4) {
-    background-color: lightgoldenrodyellow;
-    width: 75vw;
+.quote blockquote::after {
+    content: close-quote;
+}
+
+.quote p {
+    font-size: 125%;
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 75px;
+}
+
+.quote p::before { 
+    content: "--"
+}
+
+.why ul {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
-/* add back meet the team  */
 
-section:nth-of-type(5) {
-    width: 100%;
+.why h2 {
+    text-align: center;
+}
+
+.why li {
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+}
+
+.why ul li img {
+    float: left;
+}
+
+.why li strong {
+    
+}
+
+.team {
     justify-content: center;
     margin: 100px;
 }
 
-section:nth-of-type(5) h2 {
+.team h2 {
     text-align: center;
 }
 
-
-section:nth-of-type(5) ul {
+.team ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-section:nth-of-type(5) ul li {
+.team ul li {
     display: flex; 
     flex-direction: column;
-    margin: 25px 50px;
+    margin: 25px 75px;
     text-align: center;
     line-height: 175%;
-
 }
 
-section:nth-of-type(5) ul li img {
+.team ul li img {
     border-radius: 50%;
     border: 3px solid lightgrey;
 }
 
-section:nth-of-type(6) {
+.sponsors {
     background-color: lightgrey;
-    width: 75vw;
 }
 
 section:last-child {
-    background-color: hotpink;
-    width: 75vw;
-} */
+    display: flex;
+    flex-direction: row;
+}
 
+section:last-child .support {
+    /* width: 25%; */
+} 
+    
+section:last-child .about {
+    /* width: 25%; */
+    
+}
