@@ -7,7 +7,7 @@ html {
 
 .site-container {
   display: grid;
-  grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .75fr 0.5fr;
+  grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .75fr 0.4fr;
 }
 
 li {
@@ -58,6 +58,11 @@ nav ul li {
   color: black;
   font-weight: 300;
   font-size: .9em;
+}
+
+#site-intro a:hover {
+  color: #e1e8ed;
+  background-color: #347096;
 }
 
 section:not(#sponsors):before, footer:before {
@@ -157,6 +162,10 @@ blockquote:after {
 #footer-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+footer {
+  background-color: #e1e8ed;
 }
 
 #footer-container div {
