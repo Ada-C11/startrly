@@ -1,7 +1,7 @@
-.main-container {
+/* .main-container {
   display: grid;
   grid-template-rows: auto;
-}
+} */
 
 section {
   padding: 2em;
@@ -60,11 +60,22 @@ blockquote {
   flex-direction: row;
   align-content: space-around;
 
+
 }
 
 .flexbox li {
-  max-width: 33%;
+  flex: 1;
   list-style-type: none;
+
+  /* justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center; */
+
+
+
+
+  /* justify-content: center;
+  align-items: center; */
 
   /* display: flex; */
 
@@ -81,18 +92,31 @@ blockquote {
   float: left;
 }
 
-.sponsers .flexbox {
+.sponsers .flexbox, .team-members .flexbox {
   justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: center;
   /* margin: .5em; */
 }
 
-.sponsers .flexbox li {
-  margin: .3em;
+.sponsers .flexbox li, .team-members .flexbox li  {
+  /* margin: .3em; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sponsers .flexbox img {
+  margin: .3em
+}
 
+.team-members .flexbox li {
+  margin: 0 1em;
+  flex-direction: column;
+}
+
+.team-members .flexbox li img {
+  border-radius: 50%;
 }
 /* .why .flexbox li:first-child {
   grid-row: 1;
