@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+.container {
+  font-family: Oswald;
+}
+
+a:hover {
+  color: #9068be;
+}
+
+nav {
+  background-color: #e62739;
+}
+
+
+ul.menu-options > li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  font-style: bold;
+  
+}
+
+#startrly {
+  margin-right: 400px;
+  margin-left: 1px;
+}
+
+#try {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.intro {
+  display: block;
+  text-align: center;
+  background-color: #6ed3cf;
+}
+
+.intro-heading {
+  font-size: 5em;
+}
+
+.intro-tagline {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.intro-action {
+  border: solid #9ea1a5 thin;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  line-height: 5em;
+  padding: 13px;
+  font-size: 1.5em;
+}
+
+#line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding-top: 0;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 2em;
+  background-color: #9068be;
+}
+
+.author {
+  display: inline;
+  float: right;
+  font-style: italic;
+  font-size: 20px;
+}
+
+#why-section {
+  background-color: #9ea1a5;
+}
+
+.why {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.why-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h2 {
+  text-align: center;
+}
+#team-section {
+  background-color: #6ed3cf;
+}
+
+.team {
+  display: grid;
+  grid-template-rows: repeat(2, 33%);
+  grid-template-rows: repeat(7, 50%);
+  list-style-type: none;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.team span {
+  display: block;
+}
+
+.team > li > img {
+  border-radius: 50%;
+}
+
+#team1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  text-align: center;
+}
+
+#team2 {
+  grid-area: 1 / 4 / span 1 / span 1;
+  text-align: center;
+}
+
+#team3 {
+  grid-area: 1 / 6 / span 1 / span 1;
+  text-align: center;
+}
+
+#team4 {
+  grid-area: 2 / 3 / span 1 / span 1;
+  text-align: center;
+}
+
+#team5 {
+  grid-area: 2 / 5 / span 1 / span 1;
+  text-align: center;
+}
+
+#sponsor-section {
+  background-color: #9ea1a5;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.sponsors > li > img {
+  padding: 20px;
+  border-color: #6ed3cf;
+  border: thick;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 
+.footer {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  background-color: #e62739;
+}
+
+#support, #about {
+  list-style-type: none;
+  text-align: center;
+} */
+
+.footer {
+  display: flex;
+  background-color: #e62739;
+}
+
+.footer div {
+  padding: 0 10em 0 2em;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
