@@ -1,34 +1,36 @@
 
-/* body {
-  
-} */
+body {
+  margin: 0;
+}
 ul {
   list-style-type: none;
   padding: 0;
 }
 
-.container {
-  display: grid;
-  padding: 10px;
-}
-
-.nav-container {
+.nav {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
   grid-template-rows: 50px;
   justify-items: stretch;
+  align-items: center;
+  font-size: 1.2em;
   font-weight: bold;
   margin-left:100px;
 }
 
-.tagline-container {
+.tagline {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
-  border-bottom: 2px solid lightgray;
+  padding: 200px;
 }
+
+h1 {
+  font-size: 3em;
+}
+
 sub {
   line-height: normal;
   position: static;
@@ -49,18 +51,23 @@ sub {
     padding:.5em;
     width: 200px;
     margin: 50px auto 100px;
-    
+}
+
+.button:hover {
+  background-color: lightgray;
 }
 
 .quote {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 2fr, 1fr;
+  border-top: 2px solid lightgray;
   border-bottom: 2px solid lightgray;
-  padding: 50px 80px;
+  padding: 120px 70px;
   font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  background-color: rgb(230, 146, 148);
 }
 
 .quote p {
@@ -89,25 +96,42 @@ blockquote::after {
 }
 h2 {
   text-align: center;
+  font-size: 2.5em;
 }
+
+.why-section {
+  padding: 100px 10px; 
+}
+
 .reason-container {
   display: flex;
   flex-direction: row;
-  
-  border-bottom: 2px solid lightgray;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 50px;
+ 
 }
-.reason strong {
-  display: inline-block;
+
+.reasons {
+  display:flex; 
+  flex-direction: row;
+  align-items: center;
 }
-.team-container {
+
+.reasons div{
+  width: 280px;
+  padding: 10px;
+}
+
+.team {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px 200px;
+  margin: 30px 200px 60px;
 
 }
-.team-container img {
+.team img {
   border-radius: 50%;
   padding: .3em;
   border: 1px solid lightgray;
@@ -115,11 +139,37 @@ h2 {
   flex: 0 0 calc(33.33% - 30px);
   margin: 5px;
 }
-.team-container li {
-  margin: 20px 100px;
+.team li {
+  margin: 20px 110px;
 }
-.team-container span {
+
+.team span {
   display: block;
   text-align: center;
 }
 
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 2px solid lightgray;
+  justify-content: center;
+
+}
+
+.sponsors img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 70px 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 10px 40px;
+}
+
+.footer div {
+  margin: 0 100px;
+}
