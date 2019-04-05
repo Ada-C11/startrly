@@ -1,6 +1,6 @@
 * {
     color: black;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -26,12 +26,25 @@ nav ul {
     display: block;
 }
 
+.welcome sub {
+    font-size: 1.5rem;
+    padding: 1em;
+    bottom: .5em;
+}
+
 .welcome [href] {
     border: purple outset;
-    display: inline-block;
     text-decoration: none;
     padding: 1rem;
+    display: block;
+    width: 20%;
+    margin: auto;
 }
+
+.welcome [href]:hover {
+    border: blue solid;
+}
+
 
 section {
     border-top: solid lightgray;
@@ -53,7 +66,7 @@ section.mission ul {
     flex-wrap: wrap;
     display: flex;
     padding: 2em;
-    justify-content: left;
+    justify-content: center;
 }
 
 .mission img {
@@ -72,6 +85,7 @@ section.mission ul {
 .mission {
     display: block;
     align-content: center;
+    text-align: center;
 }
 
 div.mission-phrases {
