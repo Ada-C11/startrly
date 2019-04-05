@@ -60,6 +60,8 @@ nav ul li:nth-child(2) {
     margin: 25px;
     padding: 20px;
     font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(50, 228, 65);
 }
 
 .quote {
