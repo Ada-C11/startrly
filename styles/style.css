@@ -84,6 +84,24 @@ nav ul li:nth-child(2) {
     padding-right: 20em;
 }
 
+blockquote:before {
+    color: #000;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    color: #000;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 1em;
+    vertical-align: -0.5em;
+}
+
 .from {
     text-align: right;
     font-style: italic;
