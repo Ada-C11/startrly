@@ -1,0 +1,224 @@
+div {
+  font-family: 'Do Hyeon', sans-serif;
+  
+}
+
+/* Style top row */
+
+
+.nav_row {
+  background-color:white;
+  display: grid;
+  grid-template: 2em / 70vmax 10vmax 20vmax;
+  box-shadow: 0px 10px blue;
+  list-style-type: none;
+  position: fixed;
+  margin-top: -1px;
+  padding-top: 1em;
+}
+
+.nav_row li {
+  text-align: left;
+}
+
+.nav_elem::before{
+  content: "🌼"
+}
+/* Style title header */
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/wall2.jpg");
+
+  /* Set a specific height */
+  min-height: 100px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header {
+  display: grid;
+  grid-template: 1fr 2fr 1fr 200px / 1fr 0.5fr 1fr;
+  text-align: center;
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+} 
+
+.title{
+  font-size: 4em;
+  grid-area: 2/1/2/4;
+}
+
+.title::before{
+  content: "🧀";
+}
+
+.title::after{
+  content: "🐁";
+}
+
+.tagline{
+  font-size: 2em;
+  grid-area: 3/1/3/4;
+}
+
+.taglink{
+  background-color: white;
+  border: 3px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 10px;
+  grid-area: 4/2/4/2;
+  height: 3em;
+  margin-left: 2.5em;
+  padding-top: 1.5em;
+  text-decoration: none;
+  width: 200px;
+  -webkit-text-fill-color: blue;
+}
+
+.taglink:hover{
+  background-color: lime;
+}
+
+/* Style quote x2*/
+.quote_block {
+  background-color: lime;
+  border: 5px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: blue;
+  display: grid;
+  grid-template: 1fr 1fr / 100px 1fr repeat(5, 25px) 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quote {
+  grid-row-start: 1;
+  grid-column: 2 / -4;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+.quote::before {
+  content: "\"";
+}
+
+.quote::after {
+  content: "\"";
+}
+
+.quote_author::before {
+  content: "--"
+}
+
+.quote_author {
+  grid-row-start: 2;
+  grid-column: 3 / -3;
+}
+
+/* style h2 (section headers) x3 */
+.section_header {
+  color: blue;
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 4em;
+  text-align: center;
+} 
+
+/* style why-boxes section */
+/* having tourbles with wrapping text */ 
+
+.why_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -30px;
+  list-style-type: none;
+
+}
+
+.why_img {
+  float: left;
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.why_desc {
+  padding: 1em 1em;
+  margin-top: -0.5em;
+}
+
+
+/* meet the team section */
+.team {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.team_box {
+  display: grid;
+  grid-template: 3fr 2em 2em / 1fr;
+  margin: 100px;
+  text-align: center;
+  margin-top: -2em;
+} 
+
+.team_img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.name {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Sponsor box format */
+.sponsor_box {
+  align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 35px;
+}
+
+.sponsor {
+  list-style-type: none;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+section:last-of-type {
+  background-color: lime;
+}
+
+.footer {
+  border: 5px;
+  border-top-style: solid;
+  border-color: blue;
+  display: grid;
+  grid-template: 3em 1fr / 400px 1fr;
+  padding: 100px;
+  
+}
+
+.footer_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
