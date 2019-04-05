@@ -23,7 +23,7 @@ ul {
   padding-inline-start: 0px;
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 img {
@@ -31,20 +31,15 @@ img {
   height: auto;
 }
 
-nav li {
-  display: inline-flex;
-  padding: 1rem;
-}
-
-
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: minmax(500px, auto);
-  padding: 20px;
+  padding: 30px;
   justify-content: space-around;
   align-items: center;
-  border: 1.5em solid pink;
+  border: 1.5em solid;
+  border-image: linear-gradient(to top, blue, pink) 1;
   border-bottom: none;
 }
 
@@ -58,9 +53,15 @@ nav li {
 }
 
 nav {
-position: -webkit-sticky;
-position: sticky;
-top: 20px;
+  grid-column: span 3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+.wrapper li{
+  display: inline;
+  margin-left: 2em;
 }
 
 .container>section.welcome {
@@ -151,8 +152,6 @@ blockquote {
 }
 
 .sponsors img {
-  width: 200px;
-  height: auto;
   margin: 0 20px;
 }
 
