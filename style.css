@@ -1,24 +1,8 @@
-/* .flex-box-top {  */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* background-color: antiquewhite; */
-/* } */
 
-/* .flex-box-top nav ul { */
-    /* list-style: none;  */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row-reverse; */
-/* } */
-
-/* .flex-box-top nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
-/* } */
+/* .grid-container {
+    display: grid;
+    height: 100%;
+} */
 
 html, body {
     height: 100%;
@@ -39,7 +23,7 @@ ul li {
     flex: 0.5;
 }
 
-.flex-box-nav li:nth-child(1) {
+.flex-box-nav li:first-child {
     /* margin-right: auto; */
     flex: 2;
 }
@@ -110,12 +94,15 @@ ul li {
     justify-content: center;
 }
 
-
+.why {
+    display: grid;
+    text-align: center;
+}
 
 .why-subs {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: row; */
+    justify-content: space-around;
     flex-wrap: wrap;
     /* max-width: 3rem; */
 }
@@ -130,6 +117,7 @@ ul li {
 .img-text {
     display: flex;
     flex-direction: row;
+    /* margin: 2rem; */
     /* justify-content: space-between; */
 }
 
@@ -146,6 +134,85 @@ ul li {
     margin: 1rem;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    /* width: 45%; */
+    margin: auto;
+  }
+
+.meet-the-team {
+    grid-column: 1 / 4;
+    text-align: center;
+    height: auto;
+    border-bottom: none;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.team-members li {
+    margin: 3rem;
+  }
+  
+ .team-members span {
+    display: block;
+    margin: 1rem;
+    font-size: 1rem;;
+  }
+
+ .team-members img {
+    border-radius: 50%;
+    border: 1px solid white;
+    display: block;
+  }
+
+/* .grid-team {  */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* padding: 6rem; */
+    /* justify-content: space-around; */
+    /* margin: 1em; */
+    /* justify-content: center;
+    align-content: space-between; */
+    /* justify-content: center; */
+ /* } */
+
+/* .grid-team div {
+    display: grid;
+    text-align: center;
+}
+
+.grid-team img {
+    object-fit: contain;
+    /* margin: 4rem; */
+/* }  */
+
+/* .grid-team:nth-child(4) {
+    grid-column: 2 / 3;
+} */
+
+/* .meet-the-team .grid-boxes {
+    height: 95%;
+} */
+
+
+
+/* .flex-team span {
+    text-align: center;
+} */
+
+
+
+
 /* .why {
     display: flex;
     background-color: aqua;
@@ -153,12 +220,37 @@ ul li {
 
 .meet-the-team {
     background-color: yellowgreen;
-}
+} */
 
 .sponsors {
+    display: grid;
+    text-align: center;
     background-color: beige;
+}
+
+/* .footer {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    background-color: brown;
+}
+
+.footer div:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
 } */
 
 .footer {
+    /* list-style: none; */
+    display: flex;
+    /* justify-content: space-around; */
     background-color: brown;
+
 }
+
+.footer > div {
+    flex: 0.2;
+}
+
+/* .footer div:first-child {
+    flex: 2;
+} */
