@@ -36,6 +36,7 @@
     align-items:center;
     border-bottom: solid lightgrey;
     border-bottom-width: thin;
+    margin-bottom: 20px;
 }
 a[href="#"] {
     color: white;
@@ -68,14 +69,6 @@ a:hover {
 .style-quote:after {
     content: close-quote;
 }
-/* .why-section ul {
-    display: inline-block;
-
-}
-.why-section li {
-    width: 250px;
-    float: left;
-} */
 
 .why-section ul {
     display: flex;
@@ -83,12 +76,6 @@ a:hover {
     justify-content:space-between;
     margin: 0 auto;
 }
-/* .why-section li {
-    width: 30%;
-    display:grid;
-    
-
-} */
 .gridstyle {
     width: 30%;
     display: flex;
@@ -100,6 +87,37 @@ a:hover {
 .gridstyle div {
     margin: 10px;
 }
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat (7, 1fr);
+    list-style-type: none;
+}
+.cfo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 5px;
+}
+.cmo {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.cio {
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+.cto {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.enthusiast {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+.grid-container img {
+    border-radius: 100px;
+}
+  
 
 
 
