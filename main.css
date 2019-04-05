@@ -7,11 +7,12 @@ body {
 
 .container{
   display: grid;
-  grid-template: 1fr 2fr 2fr 2fr 2fr 3.5fr 2fr 1.5fr / 2fr 1fr 1fr;
+  grid-template: 1fr 2fr 2fr .5fr 2fr 2fr 3.5fr 2fr auto / 2fr 1fr 1fr;
   grid-template-areas: 
   "n n n"
   "t t t"
   "q1 q1 q1"
+  "top top top"
   "w w w"
   "q2 q2 q2"
   "team team team"
@@ -34,11 +35,6 @@ body {
   list-style-type: none;
   /*justify-content: space-around;
   align-items: center; */
-}
-
-.startrly {
-  /* move position to left */
- 
 }
 
 .try {
@@ -94,6 +90,7 @@ a {
   grid-area: q1;
   margin-top: -50px;
 }
+
 blockquote {
   /* background: #f9f9f9; */
   /* border-left: 10px solid #ccc; */
@@ -102,6 +99,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   font-style: italic;
 }
+
 blockquote:before {
   color: #000;
   content: open-quote;
@@ -125,9 +123,65 @@ blockquote:after {
   padding-right: 40px;
   font-style: italic;
 }
+
 .why {
   grid-area: w;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: -200px;
 }
+
+#top {
+  grid-area: top;
+  text-align: center;
+  margin-top: -100px;
+}
+/* 
+.why #top {
+  align-items: center;
+}
+
+.why .pic-text {
+  grid-area: w2;
+  display: flex;
+  flex-wrap: wrap;
+  
+ 
+}*/
+.why ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding-right:  ; 
+  
+}
+
+.why strong {
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.why p {
+  
+  
+  width: 250px;
+
+} 
+.w1 {
+  grid-area: w;
+  /* position: left; */
+  width: 30%;
+}
+.w2 {
+  grid-area: w;
+  /* justify-content: center; */
+  width: 30%;
+}
+
+.w3 {
+  grid-area: w;
+  /* position: right;  */
+  width: 30%;
+} 
 
 .quote2 {
   grid-area: q2;
@@ -135,6 +189,26 @@ blockquote:after {
 
 .team {
   grid-area: team;
+  flex-wrap: flex; 
+}
+
+.team h2 {
+  text-align: center;
+}
+
+.team img {
+  border-radius: 50%;
+}
+.team span {
+  bottom: 0em; 
+  line-height: normal;
+}
+
+.team ul {
+  list-style-type: none;
+}
+.team ul li {
+  display: inline;
 }
 
 .sponsors {
@@ -143,8 +217,10 @@ blockquote:after {
 
 .footer {
   grid-area: f;
+  display: flex;
 }
 
+
 .footer ul li {
-  display: inline;
+  list-style-type: none;
 }
