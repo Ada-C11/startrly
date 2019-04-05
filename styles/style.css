@@ -188,12 +188,15 @@ blockquote + p::before {
   display: grid;
   padding: 0px;
   grid-template-rows: 1fr 1fr;
+  grid-column-gap: 5px;
 }
 
 .sponsors > div:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
+  padding: 10px;
+  grid-column-gap: 2%;
 }
 
 .sponsors > div:nth-child(2) {
@@ -201,6 +204,10 @@ blockquote + p::before {
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
+}
+
+.sponsors > div > li {
+  justify-self: center;
 }
 
 
