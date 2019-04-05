@@ -1,3 +1,8 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
 nav {
     background-color: white;
     color: rgb(235, 153, 160);
@@ -9,6 +14,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: 200; 
 }
 
 nav div {
@@ -33,17 +39,13 @@ ul {
     padding: 5rem;
 }
 
-body {
-    font-family: 'Josefin Sans Light', sans-serif
-}
-
 @keyframes fade {
     from {color: pink;}
     to {color: black;}
 }
 
 h1 {
-    font-family: 'Josefin Sans SemiBold', sans-serif;
+    font-weight: 600;
     font-size: 5rem;
     margin: 0;
     animation-name: fade;
@@ -51,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Josefin Sans SemiBold';
+    font-weight: 600;
     font-size: 2rem;
     text-align: center;
 }
@@ -73,7 +75,8 @@ section.frontpage {
 }
 
 .frontpage p {
-    font-family: 'JosefinSans-ThinItalic';
+    font-weight: 100;
+    font-style: italic;
     font-size: 2rem;
     line-height: 3rem;
     margin: 0;
@@ -81,7 +84,7 @@ section.frontpage {
 
 .frontpage a {
     background-color: pink;
-    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
     color: white;
     border: 3px dotted;
     padding: 20px;
@@ -100,12 +103,13 @@ section.frontpage {
 }
 
 blockquote {
-    font-family: 'JosefinSans-LightItalic';
+    font-weight: 300;
+    font-style: italic;
     font-size: 2rem;
 }
 
 blockquote + p {
-    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
     font-size: 2rem;
     text-align: right;
 }
