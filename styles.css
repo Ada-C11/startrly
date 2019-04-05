@@ -1,11 +1,14 @@
 /* lists */
 li {
     list-style-type: none;
-    padding: 0px 10px 0px 10px;
 }
 
 ul {
     padding-inline-start: unset;
+}
+
+img {
+    padding: 0px 10px 0px 10px;
 }
 
 /* titles */
@@ -142,13 +145,16 @@ blockquote::before, blockquote::after {
     border: 1px;
     border-top-style: solid;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
+   
 }
 
-.supportnav {
-    margin-right: auto;
+.footernav > div {
+    margin: 40px 100px 40px 100px;
 }
 
-.aboutnav {
-    order: 1;
+.footernav > div > h3 {
+    text-align: left;
 }
+
