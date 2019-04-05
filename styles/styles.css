@@ -1,0 +1,150 @@
+* {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(grey, white);
+    /* background-image: linear-gradient(black, white); */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+    padding: 40;
+    text-align: left;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 75% 12.5% 12.5%;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+}
+
+.welcome sub {
+    font-size: 1.5rem;
+    padding: 1em;
+    bottom: .5em;
+}
+
+.welcome [href] {
+    border: purple outset;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+.welcome [href]:hover {
+    border: blue solid;
+}
+
+
+section {
+    border-top: solid lightgray;
+    /* background-image: linear-gradient(#1178af, white); */
+}
+
+section.quote-inspo {
+    font-style: italic;
+    text-align: center;
+}
+
+section.quote-inspo p {
+    text-align: right;
+    padding: 2rem;
+}
+
+section.mission ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+}
+
+.mission img {
+    float: left;
+    padding: 1em;
+}
+
+.mission li {
+    margin-bottom: 1em;
+    vertical-align: middle;
+    text-align: left;
+    padding: 2em;
+    display: inline;
+}
+
+.mission {
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+div.mission-phrases {
+    block-size: 75px ;
+    font-size: .75rem;
+    display: inline-block;
+    inline-size: 75px;
+}
+
+.meet-the-team, .team-member-name, .team-member-role {
+    display: block;
+    text-align: center;
+    align-content: center;
+    box-sizing: content-box;
+}
+
+section.meet-the-team ul, section.sponsors ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+}
+
+.team-profile img {
+    border-radius: 50%;
+    margin-bottom: 1em;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2em;
+}
+
+section.sponsors ul {
+    justify-content: space-around;
+}
+
+section.footer {
+    text-align: left;
+    justify-content: left;
+    align-content: flex-start;
+    display: block;
+    margin: 0;
+    padding: 0.2rem;
+    font-size: .8rem;
+}
+
+section.footer div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 0.75rem;
+}
+
+section.footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0.2rem;
+}
+
+section.footer ul li {
+    text-align: left;
+}
