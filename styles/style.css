@@ -46,7 +46,6 @@ a[href="#"]{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 25px);
-  flex-wrap: wrap;
   text-align: center;
   padding-top: 60px;
   font-style: italic;
@@ -100,7 +99,6 @@ a[href="#"]{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 25px);
-  flex-wrap: wrap;
   text-align: center;
   padding-top: 60px;
   font-style: italic;
@@ -123,7 +121,8 @@ a[href="#"]{
 .team {
   padding-top: 80px;
   text-align: center;
-}
+} 
+
 .team ul {
   grid-row: 2 span 3;
   display: flex;
@@ -139,16 +138,16 @@ a[href="#"]{
   flex-direction: column;
   align-items: stretch;
   text-align: center;
-  padding: 25px;
+  padding: 40px;
   padding-left: 2
 
 }
 
 .team ul li img{
-  border-radius: 55%;
   border-style: solid;
   border-color: grey;
   border-width: 1px;
+  border-radius: 90px;
 }
 
 .team ul li > * {
@@ -160,11 +159,19 @@ h2{
 }
 
 .sponsors{
-  text-align: center;
+  display: flex;
+  border-bottom: 1px solid gray;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sponsors ul li {
+.sponsors ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
-  
- 
+  justify-content:flex-start;
+  margin: 40px;
+  padding-left: 0em;
 }
+
