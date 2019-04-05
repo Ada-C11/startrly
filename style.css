@@ -6,10 +6,14 @@ html, body {
     font-family: 'Lato', sans-serif;
 }
 
-sub {
-    font-size: 1.5em;
+h1, h2, sub {
     font-weight: bold;
 }
+
+sub {
+    font-size: 1.5em;
+}
+
 
 ul li {
     list-style: none;
@@ -26,7 +30,7 @@ ul li {
     flex: 0.5;
 }
 
-.flex-box-nav > li:hover {
+.flex-box-nav > li:hover, .flex-box-startrly a:hover, .footer li:hover {
     color: blue;
 }
 
@@ -40,9 +44,27 @@ ul li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 25%;
+    height: 30%;
+    padding-top: 1rem;
 }
 
+.flex-box-startrly div:nth-child(2), .flex-box-startrly div:nth-child(3){
+    margin-bottom: 1.5em;
+}
+
+.flex-box-startrly a {
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 10px;
+  color: black;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}
 
 
 .quote {
@@ -160,70 +182,11 @@ ul li {
     display: block;
   }
 
-/* .grid-team {  */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* padding: 6rem; */
-    /* justify-content: space-around; */
-    /* margin: 1em; */
-    /* justify-content: center;
-    align-content: space-between; */
-    /* justify-content: center; */
- /* } */
-
-/* .grid-team div {
-    display: grid;
-    text-align: center;
-}
-
-.grid-team img {
-    object-fit: contain;
-    /* margin: 4rem; */
-/* }  */
-
-/* .grid-team:nth-child(4) {
-    grid-column: 2 / 3;
-} */
-
-/* .meet-the-team .grid-boxes {
-    height: 95%;
-} */
-
-
-
-/* .flex-team span {
-    text-align: center;
-} */
-
-
-
-
-/* .why {
-    display: flex;
-    background-color: aqua;
-}
-
-.meet-the-team {
-    background-color: yellowgreen;
-} */
-
 .sponsors {
     display: grid;
     text-align: center;
     background-color: beige;
 }
-
-/* .footer {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    background-color: brown;
-}
-
-.footer div:first-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 1;
-} */
 
 .footer {
     /* list-style: none; */
