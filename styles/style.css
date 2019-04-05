@@ -118,12 +118,6 @@ nav.navbar > ul.nav > li.navbar-name a:focus > li > a {
   line-height: 20px;
 }
 
-nav.navbar > ul.nav > li.action a,
-nav.navbar > ul.nav > li.action a:hover,
-nav.navbar > ul.nav > li.action a:focus > li > a {
-  float: right;
-}
-
 .welcome {
   display: flex;
   flex-flow: column wrap;
@@ -282,11 +276,12 @@ h2 {
   align-items: center;
 }
 
+/* This is missing some prettification but has the structure to look nice */
 #footer {
   display: grid;
   grid-template-columns: 1.5fr 3.5fr;
   padding: 2% 10% 10% 10%;
-  background-image: url('../art/cute-turtle-animated-gif-2.gif');
+  background-image: url;
   background-repeat: no-repeat;
   background-position: 80% 0%;
   background-size: contain;
