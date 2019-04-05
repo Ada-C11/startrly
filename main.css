@@ -161,27 +161,9 @@ blockquote:after {
   flex-wrap: wrap;
 }
 .why p {
-  
-  
   width: 250px;
-
 } 
-.w1 {
-  grid-area: w;
-  /* position: left; */
-  width: 30%;
-}
-.w2 {
-  grid-area: w;
-  /* justify-content: center; */
-  width: 30%;
-}
 
-.w3 {
-  grid-area: w;
-  /* position: right;  */
-  width: 30%;
-} 
 
 .quote2 {
   grid-area: q2;
@@ -190,18 +172,23 @@ blockquote:after {
 .team {
   grid-area: team;
   flex-wrap: flex; 
+  justify-content: space-between;
+  padding-bottom: 70px;
 }
 
 .team h2 {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .team img {
   border-radius: 50%;
+  
 }
 .team span {
   bottom: 0em; 
   line-height: normal;
+  padding-bottom: 70px;
 }
 
 .team ul {
@@ -213,6 +200,14 @@ blockquote:after {
 
 .sponsors {
   grid-area: s;
+}
+
+.sponsors ul li {
+  display: inline-block;
+}
+
+.sponsors h2 {
+  text-align: center;
 }
 
 .footer {
