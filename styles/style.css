@@ -21,6 +21,9 @@ div {
   text-align: left;
 }
 
+.nav_elem::before{
+  content: "🌼"
+}
 /* Style title header */
 
 .parallax {
@@ -48,6 +51,14 @@ div {
 .title{
   font-size: 4em;
   grid-area: 2/1/2/4;
+}
+
+.title::before{
+  content: "🧀";
+}
+
+.title::after{
+  content: "🐁";
 }
 
 .tagline{
