@@ -185,21 +185,17 @@ ul li {
 .sponsors {
     display: grid;
     text-align: center;
-    background-color: beige;
 }
 
 .footer {
-    /* list-style: none; */
     display: flex;
-    /* justify-content: space-around; */
-    background-color: brown;
-
+    padding-left: 6rem;
 }
 
 .footer > div {
     flex: 0.2;
 }
 
-/* .footer div:first-child {
-    flex: 2;
-} */
+.sponsors, .quote, .why, .flex-box-startrly {
+    border-bottom: 1px solid grey;
+}
