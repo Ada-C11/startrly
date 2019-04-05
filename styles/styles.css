@@ -80,3 +80,31 @@ div.mission-phrases {
     display: inline-block;
     inline-size: 75px;
 }
+
+.meet-the-team, .team-member-name, .team-member-role {
+    display: block;
+    text-align: center;
+    align-content: center;
+    box-sizing: content-box;
+}
+
+section.meet-the-team ul, section.sponsors ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+}
+
+.team-profile img {
+    border-radius: 50%;
+    margin-bottom: 1em;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2em;
+}
+
+section.sponsors ul {
+    justify-content: space-around;
+}
+
