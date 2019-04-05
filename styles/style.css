@@ -99,14 +99,9 @@ nav ul :first-child {
     text-align: right;
 }
 
-/* .quote blockquote:after {
-    display : block;
-    text-align : right;
-    font-size : 2em;
-    margin : 20px auto;
-    color: black;
+.quote p:before {
     content: "—";
-} */
+}
 
 #meettheteam ul {
     display: flex;
