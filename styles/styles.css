@@ -5,11 +5,15 @@ html {
 
 .site-container {
   display: grid;
-  grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .5fr 0.3fr;
+  grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .75fr 0.3fr;
 }
 
 li {
   list-style-type: none;
+}
+
+section h2 {
+  text-align: center;
 }
 
 nav ul {
@@ -93,7 +97,6 @@ blockquote:after {
 
 #why h2 {
   padding: 2.5% 0;
-  text-align: center;
 }
 
 #why ul {
@@ -110,10 +113,6 @@ blockquote:after {
   margin: 0px 10px;
   vertical-align: top;
 } 
-
-#team h2 {
-  text-align: center;
-}
 
 #team ul {
   display: flex;
@@ -143,3 +142,13 @@ blockquote:after {
   text-align: center;
 }
 
+#sponsors ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#sponsors li {
+  margin: 0 1%;
+}
