@@ -1,0 +1,83 @@
+ul {
+    list-style-type: none;
+  }
+  
+  h1 {
+    background-color: #3bafb3;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  section.team img {
+    border-radius: 50%;
+  }
+  
+  /* a:hover {
+    background-color: hotpink;
+  } */
+  
+  a[href="#"] {
+    color:black;
+    text-decoration: none;
+  }
+  
+  section.sub {
+    text-align: center
+  }
+  
+  blockquote {
+    font-style: italic;
+  }
+  
+  blockquote::first-letter {
+    font-size: 2em;
+  }
+  
+  section.team {
+    height: 600px;
+  }
+  
+  section.team ul {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template: auto auto / auto auto auto auto auto auto;
+    justify-items: center;
+  }
+  
+  section.team ul li {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template: auto auto 40% / auto;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: auto / span 2;
+  }
+  
+  section.team ul li:nth-last-child(-n+2) {
+    grid-column: auto / span 3;
+  }
+  
+  section.sponsors {
+    height: 300px;
+  }
+  
+  section.sponsors ul {
+    display: grid;
+    grid-template: auto auto / auto auto auto auto;
+    justify-items: center;
+  }
+  
+  section.sponsors ul li:nth-last-child(1) {
+    grid-column: auto / span 4;
+  }
+  
+  section.footer {
+    display: grid;
+    grid-template: auto / 1fr 1fr 2fr;
+  }
