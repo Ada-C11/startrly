@@ -72,6 +72,9 @@ nav ul {
 .quote {
     display: flex;
     display: grid;
+    border: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
 }
 
 blockquote {
@@ -80,6 +83,7 @@ blockquote {
     font-style: italic;
     margin-left: 5em;
     margin-right: 5em;
+    margin-top: 5em;
 }
 
 blockquote::before, blockquote::after {
@@ -95,6 +99,19 @@ blockquote::before, blockquote::after {
     font-size: 2em;
     margin-left: auto;
     margin-right: 4em;
+    margin-bottom: 5em;
 }
 
+/* the team */
+#teamtitle {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    
+}
 
+#team {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+}
