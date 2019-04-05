@@ -1,3 +1,65 @@
-nav ul {
-    list-style-type: none;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-family: sans-serif;
 }
+
+body div > section {
+  border-bottom: solid lightgray;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+  
+ul {
+list-style-type: none;
+margin-left: 0px;
+padding-left: 0px;
+}
+
+nav ul {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+nav ul li {
+padding: 5%;
+font-size: 80%;
+font-family: 'Open Sans',serif;
+}
+
+nav ul :first-child {
+    margin-right: auto;
+  }
+
+#first_page {
+display: flex;
+flex-direction: column;
+margin-bottom: 5%;
+line-height: 500%;
+
+}
+  
+#first_page sub {
+font-size: 150%;
+margin-bottom: 5%
+}
+  
+#first_page a {
+text-decoration: none;
+color: black;
+border-radius: 5%;
+border: solid lightgray;
+width: 200px;
+align-self: center;
+}
+  
+
+#why h2 {
+font-size: 2rem;
+}
+  
+  /* #content { */
