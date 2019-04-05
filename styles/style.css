@@ -49,7 +49,7 @@ nav li {
 
 #intro a:hover {
     font-weight: bold; 
-    background-color: lightcyan;
+    background-color: lightsalmon;
 }
 
 .quote {
@@ -59,6 +59,7 @@ nav li {
     font-style: italic;  
     align-items: center;  
     font-size: 110%;
+    background-color: whitesmoke;
 } 
 
 .quote blockquote {
