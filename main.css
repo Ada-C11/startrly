@@ -1,0 +1,10 @@
+.maingrid {
+    display: grid;
+    grid-template: repeat(7, 1fr) / 150px, 350px, 150px;
+
+}
+
+.foot {
+display: flex;
+flex-wrap: wrap;
+}
