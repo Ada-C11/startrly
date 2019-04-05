@@ -1,8 +1,8 @@
-.container {
+/* .container {
     display: grid;
     border: solid black 2px;
     flex-wrap: wrap;
-}
+} */
 
 h1 {
     font-family: 'Tangerine', cursive;
@@ -33,7 +33,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-weight: bold;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 nav ul li:nth-child(2) {
@@ -52,6 +52,7 @@ nav ul li:nth-child(2) {
     text-align: center;
     justify-content: space-around;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 #action-call {
@@ -62,6 +63,7 @@ nav ul li:nth-child(2) {
     font-size: 15px;
     text-decoration: none;
     background-color: rgb(50, 228, 65);
+    flex-wrap: wrap;
 }
 
 .quote {
@@ -72,18 +74,21 @@ nav ul li:nth-child(2) {
     /* border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey; */
     margin-bottom: 3em;
+    flex-wrap: wrap;
 }
 
 .quote>blockquote {
     font-style: italic;
     padding: 5em 20em 1em 20em;
     font-size: 1em;
+    flex-wrap: wrap;
 }
 
 .quote>p {
     font-style: italic;
     text-align: right;
     padding-right: 20em;
+    flex-wrap: wrap;
 }
 
 blockquote:before {
@@ -168,10 +173,12 @@ blockquote:after {
     display: grid;
     flex-direction: column;
     grid-template-columns: 30% 70%;
+    flex-wrap: wrap;
 }
 
 .footer>.support {
     padding-left: 10em;
+    flex-wrap: wrap;
 }
 
 .footer>.support ul {
@@ -180,6 +187,8 @@ blockquote:after {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    position: absolute;
 }
 
 .footer>.about ul {
@@ -188,4 +197,6 @@ blockquote:after {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    position: absolute;
 }
