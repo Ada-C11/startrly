@@ -1,7 +1,4 @@
-/* .main-container {
-  display: grid;
-  grid-template-rows: auto;
-} */
+
 h1, h2, h3 {
   font-family: 'Oleo Script', cursive;
 }
@@ -14,7 +11,6 @@ nav ul {
 }
 nav, footer {
   background-color: #015249;
-  /* color: #A5A5AF; */
   color: beige;
 }
 .team-members {
@@ -32,8 +28,6 @@ h2 {
   background: #57BC90;
   display: grid;
   align-items: center;
-  /* justify-content: center; */
-  /* flex-direction: column; */
   grid-template-rows: 35% 1fr 1fr ;
   font-size: 1.6em
 }
@@ -63,7 +57,6 @@ h2 {
   display: grid;
   align-items: center;
   background-color: #77C9D4;
-  /* background-color: #A5A5AF; */
   background-color: beige;
 }
 
@@ -86,23 +79,6 @@ blockquote {
 .flexbox li {
   flex: 1;
   list-style-type: none;
-
-  /* justify-content: space-around;
-  flex-wrap: wrap;
-  justify-content: center; */
-
-
-
-
-  /* justify-content: center;
-  align-items: center; */
-
-  /* display: flex; */
-
-  /* display: grid; 
-  grid-template-rows: 35px 1fr;
-  grid-template-columns: 110px 1fr; */
-
 }
 .why .flexbox li > * {
   padding: .5em
@@ -116,11 +92,9 @@ blockquote {
   justify-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: .5em; */
 }
 
 .sponsers .flexbox li, .team-members .flexbox li  {
-  /* margin: .3em; */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -132,43 +106,31 @@ blockquote {
 }
 
 .team-members .flexbox li {
-  /* display: flex;
-  justify-content: center; */
   margin: 0 2em;
   flex-direction: column;
-
 }
 
 .team-members .flexbox li img {
   border-radius: 50%;
 }
 
-
-
 nav ul, footer {
-
   display: grid;
   grid-template-columns: 10% 10% 20% 20% 10% 10% 10% 10%;
-  /* grid-template-columns: 1fr, 1fr, 2fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr; */
 }
 
 nav li:first-child {
   grid-column-start: 2;
-
 }
 
 nav li:nth-child(2) {
   grid-column-start: 5;
-
 }
+
 nav li:last-child {
   grid-column-start: 7;
 }
 
-/* footer {
-  display: grid;
-  grid-template-columns: grid-template-columns: 10%, 10%, 15%, 25%, 10%, 10%, 10%, 10%;
-} */
 footer div:first-child {
   grid-column-start: 2;
 }
@@ -177,21 +139,10 @@ footer div:last-child {
 }
 
 footer ul {
-  /* text-align: left; */
-  /* list-style-type: none;
-  list-style-position: outside; */
-
-
-
   padding-left: 0pt;
 }
-/* footer div {
-  display: flex;
-  flex-direction: column;
-} */
 
 li {
   list-style-type: none;
-  /* display: block */
 }
 
