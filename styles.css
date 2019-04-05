@@ -194,12 +194,6 @@
     max-width: 100%;
 }
 
-/* .team > ul img:first-child {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start
-} */
-
 .all-sponsors-section {
     grid-row: 7 / 8;
     grid-column: 1 / span 4;
@@ -221,14 +215,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 3%;
+    padding: 1%;
+    margin-left: 7%;
+    margin-right: 7%
 } 
+
 
 .sponsors ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 3%;
+    padding: 0.5%;
     
 }
 
