@@ -20,10 +20,7 @@ ul li {
 }
 
 .flex-box-nav {
-    /* list-style: none; */
     display: flex;
-    /* justify-content: space-around; */
-
 }
 
 .flex-box-nav > li {
@@ -62,17 +59,18 @@ ul li {
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
-  /* margin: 4px 2px; */
   cursor: pointer;
 }
 
 
 .quote {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-style: italic;
+    justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color:rgba(192,192,192,0.2);
+    height: 30%;
 }
 
 
@@ -86,7 +84,8 @@ ul li {
 
 .quote p {
     align-self: flex-end;
-    margin-right: 4rem;
+    margin-right: 3rem;
+    padding-bottom: 3rem;
 }
 
 .quote p:before {
@@ -107,14 +106,11 @@ ul li {
 
 .why-subs {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
     flex-wrap: wrap;
-    /* max-width: 3rem; */
 }
 
 .why-subs img {
-    /* object-fit: contain; */
     align-self: flex-start;
     margin-left: 3rem;
     margin-right: 1rem;
@@ -124,17 +120,10 @@ ul li {
     display: flex;
     flex-direction: row;
     text-align: left;
-
-    /* margin: 2rem; */
-    /* justify-content: space-between; */
 }
 
 .why-subs p {
     max-width: 150px;
-    /* margin-left: 1rem; */
-    /* align-self: flex-end; */
-    /* flex-shrink: 1; */
-    /* width: auto; */
 }
 
 .flex-boxes img {
@@ -146,7 +135,6 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    /* width: 45%; */
     margin: auto;
   }
 
@@ -154,9 +142,8 @@ ul li {
     grid-column: 1 / 4;
     text-align: center;
     height: auto;
-    border-bottom: none;
+    margin-top: 2rem;
 }
-
 
 .team-members {
     display: flex;
