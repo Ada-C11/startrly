@@ -1,11 +1,9 @@
 
-/* .grid-container {
-    display: grid;
-    height: 100%;
-} */
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 html, body {
     height: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 ul li {
