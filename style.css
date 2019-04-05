@@ -1,0 +1,241 @@
+/* QUESTIONS TO ASK:  */
+/* 1. why is my heading section tagline and call to action not aligned?*/
+
+/* overall style */
+div {
+    /* background-color: navy; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* nativation bar style */
+nav {
+    background-color: pink;
+    height: 3em;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+nav ul {
+    /* border: solid; */
+    list-style: none;
+    display: grid;
+    grid-template: 25% 75% / 70% 15% 15%;
+    /* grid-template-columns: 70% 15% 15%; */
+    /* grid-template-rows: 25% 75%; */
+}
+nav ul li:first-child{
+    /* border: solid; */
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+nav ul li:nth-of-type(2) {
+    /* border: solid; */
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+nav ul li:nth-of-type(3) {
+    /* border: solid; */
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+/* heading style */
+#heading {
+    border-bottom: solid 1px grey;
+    background-color: lightgrey;
+    height: 20em;
+    display: grid;
+    grid-template: 1fr 1fr .5fr 1fr / 1fr 1fr 1fr;
+    /* flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
+}
+#heading h1 {
+    /* border: solid; */
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+    font-weight: bold;
+}
+/* TODO: why is text not centered in border box */
+#heading sub {
+    /* border: solid; */
+    margin-bottom: 15px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.9vw;
+    overflow-wrap: break-word;
+    position: static; 
+    line-height: normal;
+}
+#heading a {
+    border: solid;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    /* height: 50%; */
+    grid-column-start: 2;
+    grid-row-start: 4;
+    text-align: center;
+    /* font-size: 1px; */
+    color: grey;
+    text-decoration: none;
+}
+#heading a:hover {
+    color: yellow;
+}
+
+/* QUOTE styling (2) */
+.quote {
+    border-bottom: solid 1px grey;
+    background-color: antiquewhite;
+    height: 15em;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 5fr 1.5fr .5fr;
+    font-style: italic;
+}
+.quote blockquote {
+    /* border: solid; */
+    line-height: 200%;
+    grid-column-start: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-row-start: 2;
+}
+.quote p::before {
+    content: "--";
+}
+.quote p {
+    /* border: solid; */
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+/* WHY styling */
+#why {
+    /* background-color: lavender; */
+    height: 20em;
+    border-bottom: solid 1px;
+}
+#why h2, #team h2, #sponsors h2{
+    /* border: solid; */
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#why ul {
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 5%;
+}
+
+#why li {
+    /* border: solid; */
+    width: 380px;
+    display: grid;
+    grid-template: .5fr 2fr / 40% 60%;
+}
+#why img { 
+    /* border: solid 1px; */
+    grid-row: auto / span 2;
+    height: 8em;
+}
+#why strong {
+    /* border: solid; */
+}
+#why p {
+    /* border: solid; */
+    /* word-wrap: none; */
+   width: 220px;
+} 
+
+/* TEAM styling */
+#team {
+    /* background-color: darkgreen; */
+    width: 100%;
+}
+/* container for team members */
+#team ul{
+    /* border: solid; */
+    list-style: none;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#team li{
+    /* border: solid; */
+    width: 30%;
+    display: grid;
+    grid-template-rows: 3fr .5fr .5fr;
+}
+#team li img {
+    border-radius: 80px;
+    margin: auto;
+}
+#team li span{
+    /* border: solid; */
+    text-align: center;
+}
+
+/* SPONSORS style */
+#sponsors {
+    /* background-color: lightcoral; */
+    border-bottom: solid 1px grey;
+}
+
+/* TODO: left margin?? this is not centered right now */
+#sponsors ul {
+    /* border: solid 1px; */
+    width: 1200px;
+    /* margin: auto; */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#sponsors ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    /* width: 25%; */
+}
+
+#footer {
+    display: grid;
+    background-color: pink;
+    grid-template-columns: .5fr 1fr 1fr 2fr;
+}
+#footer div:first-of-type {
+    /* background-color: navy; */
+    grid-column-start: 2;
+}
+#footer div:nth-of-type(2) {
+    /* background-color: navy; */
+    grid-column-start: 3;
+}
+#footer div h3{
+    /* padding-left: 45px; */
+}
+#footer ul{
+    /* border: solid; */
+    list-style: none;
+    /* display: grid; */
+    /* grid-template-columns: 4fr 1fr; */
+}
+#footer ul li{
+    /* background-color: yellow; */
+    /* text-align: left; */
+}
