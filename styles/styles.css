@@ -8,13 +8,16 @@ html {
   grid-template-rows: 0.25fr .6fr .7fr .5fr .7fr 1.25fr .5fr 0.3fr;
 }
 
+li {
+  list-style-type: none;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
 }
 
 nav ul li {
-  list-style-type: none;
   font-weight: bold;
 }
 
@@ -99,7 +102,6 @@ blockquote:after {
 }
 
 #why ul li {
-  list-style-type: none;
   width: 30%;
 }
 
@@ -108,3 +110,36 @@ blockquote:after {
   margin: 0px 10px;
   vertical-align: top;
 } 
+
+#team h2 {
+  text-align: center;
+}
+
+#team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#team li {
+  margin: 3% 7.5%;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column; 
+}
+
+.team-member img {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: .3em;
+  height: 150px;
+  width: 150px;
+}
+
+.team-member span {
+  margin-top: 1em;
+  text-align: center;
+}
+
