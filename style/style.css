@@ -6,6 +6,7 @@
 .nav {
     /* grid-row: 1/2; */
     background-color: aquamarine;
+    height: 20%;
 
      
 }
@@ -30,22 +31,36 @@
 
 .content {
     display:flex;
-    /* flex-wrap:wrap; */
     flex-direction:column;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items:center;
+    border-bottom: solid lightgrey;
+    border-bottom-width: thin;
+}
+a[href="#"] {
+    color: white;
+    background-color: #5A827F;
+    padding: 10px 10px;
+    border-style: 2px solid
+    
+}
+a:hover {
+    color: red;
 }
 .content sub {
-    line-height: 3;
+    position: static;
+    line-height: normal;
+    margin: 2%;
 
 }
 .adjustname {
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: 20%;
 }
 .style-quote {
     quotes: """ """;
     width: 60%;
+    font-family: 'Slabo 27px', serif;
 }
 .style-quote:before {
     content: open-quote;
