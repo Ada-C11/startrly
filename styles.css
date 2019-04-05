@@ -1,0 +1,26 @@
+body {
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: repeat(8, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-areas:
+    "Header "
+    "Intro"
+    "Quote"
+    "Why"
+    "Quote2"
+    "Team"
+    "Sponsors"
+    "Footer footer";
+    background-color: pink;
+  }
+
+  * {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 20 em;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
