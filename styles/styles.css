@@ -1,0 +1,132 @@
+
+.container{
+display: grid;
+grid-template: 1fr 2fr 2fr .5fr 2fr 2fr 3.5fr 2fr auto / 2fr 1fr 1fr;
+grid-template-areas: 
+"nav nav nav"
+"presentation presentation presentation"
+"quote1 quote1 quote1"
+"why_tittle why_tittle why_tittle"
+"why why why"
+"quote2 quote2 quote2"
+"team team team"
+"sponsor sponsor sponsor"
+"footer footer footer";
+}
+
+nav {
+    grid-area: nav;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+
+#try_now{
+    text-align: right;
+    display: flex;
+    
+    flex-direction: row;
+  
+}
+#about{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+#slogan{
+    grid-area: presentation;
+    text-align: center;
+    font-weight: bold;
+}
+
+#slogan sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+     
+
+#quote1{
+    grid-area: quote1;
+    text-align: center;
+
+}
+
+#why {
+
+    grid-area: why;
+    text-align: center;
+    
+}
+#why ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#why ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#quote2{
+    grid-area: quote2;
+    text-align: center;
+}
+
+#team{
+    grid-area: team;
+}
+
+#team ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#team ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#team ul li img{
+    border-radius: 50%;
+}
+
+#team ul li span{
+    justify-content: center;
+}
+
+#sponsors {
+    grid-area: sponsor;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+#sponsor ul{
+    list-style: none;
+}
+
+#sponsor ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+footer {
+   grid-area: footer;
+}
