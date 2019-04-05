@@ -64,11 +64,13 @@
     /* list-style-type: none; */
     /* margin: 16px; */
     display: flex;
+    padding-right: 5%;
+    padding-top: 2%
 }
 
 .navigation ul > li:first-child { 
-    /* background-color: tomato; */
-    justify-self: flex-start;
+    background-color: tomato;
+    
 
     /* font-style: italic; */
     /* font-size: 28pt; */
@@ -101,7 +103,8 @@
   
 #quote-one {
     /* background-color: orange; */
-    padding: 3%
+    padding-right: 10%;
+    padding-left: 10%
 }
 
 #quote-one p {
@@ -170,16 +173,17 @@
   
 .team > ul {
     display: flex;
-  /*   flex-wrap: wrap; */
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
     justify-content: center;
-    align-items: center
+    /* align-items: center */
 }
 
 .team > ul li {
-    padding: 3%;
-    flex-wrap: nowrap
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .team > ul img {
@@ -187,7 +191,7 @@
     max-height: 100%; */
     border-radius: 50%;
     padding: 15%;
-    
+    max-width: 100%;
 }
 
 /* .team > ul img:first-child {
@@ -205,7 +209,7 @@
     background-color: yellow;
     display: flex;
     flex-direction: column;
-    padding: 5%
+    padding: 5%;
 }
   
 .sponsors h2 {
@@ -215,12 +219,14 @@
   
 .sponsors ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 3%;
 } 
 
 .sponsors ul li {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 3%;
     
