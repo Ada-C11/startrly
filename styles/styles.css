@@ -108,3 +108,29 @@ section.sponsors ul {
     justify-content: space-around;
 }
 
+section.footer {
+    text-align: left;
+    justify-content: left;
+    align-content: flex-start;
+    display: block;
+    margin: 0;
+    padding: 0.2rem;
+    font-size: .8rem;
+}
+
+section.footer div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 0.75rem;
+}
+
+section.footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0.2rem;
+}
+
+section.footer ul li {
+    text-align: left;
+}
