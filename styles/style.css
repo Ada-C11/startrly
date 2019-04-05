@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: auto;
 }
 
@@ -44,6 +45,11 @@ nav li {
     border-radius: 10px;
     padding: 15px;
     color: black;
+}
+
+#intro a:hover {
+    font-weight: bold; 
+    background-color: lightcyan;
 }
 
 .quote {
