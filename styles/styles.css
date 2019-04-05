@@ -1,0 +1,35 @@
+* {
+    color: black;
+
+}
+
+body {
+    background-image: linear-gradient(grey, white);
+    /* background-image: linear-gradient(black, white); */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+    padding: 40;
+    text-align: left;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 75% 12.5% 12.5%;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+}
+
+.welcome [href] {
+    border: purple outset;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
