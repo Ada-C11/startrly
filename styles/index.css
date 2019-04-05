@@ -1,0 +1,8 @@
+nav li {
+  display: inline-flex;
+  padding: 1rem;
+}
+
+section h1 {
+  align-content: center;
+}
