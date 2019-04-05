@@ -80,7 +80,6 @@ a[href="#"]{
   padding-top: 80px;
   border-style: solid;
   border-width: 1px;
-
 }
 
 .content ul{
@@ -100,6 +99,7 @@ a[href="#"]{
   height: 100px;
   width: 100px;
   padding-left: 10px; 
+  padding-right: 10px;
   padding-bottom: 25px;
   float: left
 }
