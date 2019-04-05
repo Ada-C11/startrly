@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700');
+
+* {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+} 
+
+li {
+    list-style-type: none;
+}
+
+.top-nav-bar {
+    grid-column: 1 / span 4;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    font-weight: bold;
+}
+
+nav li {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+nav li:nth-child(2), nav li:nth-child(3) {
+    text-align: center
+}
+
+.title-section {
+    grid-column: 1 / span 4;
+  }
+  
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    justify-content: space-around
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.title p {
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(239, 231, 244);
+    border-radius: 15px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: rgb(208, 206, 237);
+}
+
+.top-quote-block {
+    grid-column: 1 / span 4;
+}
+  
+#quote-one {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-style: italic
+}
+
+#quote-one p {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%
+}
+
+#quote-one p:before, #quote-two p:before {
+    content: "--"
+}
+
+.why-company-section {
+    grid-column: 1 / span 4;
+}
+  
+.about-company {
+    padding: 5%
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+  
+.about-company h2 {
+    display: flex;
+    justify-content: center;
+}
+  
+.about-company ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+.about-company ul li {
+    padding-right: 3%
+}
+  
+.second-quote-block {
+    grid-column: 1 / span 4;
+}
+  
+#quote-two {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-style: italic
+}
+
+#quote-two p {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+}
+
+.meet-team {
+    grid-column: 1 / span 4;
+}
+  
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%
+}
+  
+.team > h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.top-three, .bottom-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team > ul li {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-right: 5%;
+    padding-left: 5%
+}
+
+.team > ul img {
+    border-radius: 50%;
+    border: 0.5rem solid rgb(239, 231, 244);
+    max-width: 100%;
+}
+
+.all-sponsors-section {
+    grid-column: 1 / span 4;
+}
+  
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+  
+.sponsors h2 {
+    display: flex;
+    justify-content: center;
+}
+  
+.sponsors ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1%;
+    margin-left: 7%;
+    margin-right: 7%
+} 
+
+.sponsors ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5%;
+}
+
+.support-and-about {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(239, 231, 244);
+}
+
+.support-and-about ul {
+    padding: 0px;
+}
+
+.support-and-about div {
+    padding: 5%
+}
+
+.support-and-about li:hover {
+    font-weight: bold;
+}
