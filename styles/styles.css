@@ -1,7 +1,7 @@
-
 body {
   margin: 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -94,6 +94,7 @@ blockquote::after {
 .quote p::before {
   content: "--"
 }
+
 h2 {
   text-align: center;
   font-size: 2.5em;
@@ -131,6 +132,7 @@ h2 {
   margin: 30px 200px 60px;
 
 }
+
 .team img {
   border-radius: 50%;
   padding: .3em;
@@ -139,6 +141,7 @@ h2 {
   flex: 0 0 calc(33.33% - 30px);
   margin: 5px;
 }
+
 .team li {
   margin: 20px 110px;
 }
