@@ -12,10 +12,10 @@
   justify-content: center;
   background-color: #CD8987;
   padding-top: 2em;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
-  background-color: #CDCACC;
   display: grid;
   grid-template-columns: 70% 15% 15%;
   font-weight: bold;
@@ -72,11 +72,22 @@ section {
   font-size: 2em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 2em;
-  padding-left: 2em;
+  padding-left: .5em;
+}
+
+blockquote {
+  background-color: #CDD6DD;
+  border-radius: 50px;
+  padding: 1em;
 }
 
 .quote p:before {
   content: "--";
+}
+
+.quote p {
+  text-align: right;
+  padding: 0em 3em 0em 0em;
 }
 
 .why ul {
@@ -92,6 +103,23 @@ section {
 .team ul {
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
+  padding: 0em 0% 0em 5%;
+}
+
+.team li {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1em;
+}
+
+.team li span {
+  margin: 0em 1em .2em 1em;
+}
+
+.team ul:nth-child(4) {
+  margin-left: 30px;
 }
 
 .team img[src] {
@@ -102,11 +130,33 @@ li {
   list-style-type: none;
 }
 
+.sponsors {
+  display: grid;
+  grid-template-areas: 
+}
+
+.sponsors {
+  display: grid;
+  grid-rows: 1fr 5fr;
+}
+
+.sponsors ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  align-items: center;
+  padding-right: 3em;
+}
+
+.sponsors ul li {
+  padding: 1em;
+}
+
 section:last-of-type {
   background-color: #CDCACC;
   /* padding: 0em 0em 5em 5em; */
   display: grid;
   grid-template-areas: "a b c c"
   "a b c c";
-  
 }
