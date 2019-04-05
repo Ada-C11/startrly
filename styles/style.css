@@ -27,6 +27,7 @@ nav li {
     margin-top: 10vh;
     height: 25vh;
     text-align: left;
+    border-bottom: 1px solid grey;
 }
 
 .testimonial p {
@@ -39,6 +40,7 @@ nav li {
 /* WHY SECTION */
 .selling-points {
     padding-bottom: 5vw;
+    border-bottom: 1px solid grey;
 }
 
 .selling-points h2 {
@@ -81,7 +83,7 @@ nav li {
 /* MEET THE TEAM */
 
 .team {
-    /* background-color: lightcoral; */
+    background-color: lightcoral;
     padding-bottom: 3vw;
     padding-top: 3vw;
 }
@@ -120,4 +122,33 @@ nav li {
 
 /* SPONSORS */
 
+.sponsors {
+    border-bottom: 1px solid grey;
+}
+
+.sponsors h2 {
+    text-align: center;
+}
+
+.sponsors ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.sponsors li {
+    list-style-type: none;
+    width: 25%;
+}
+
+.sponsors img {
+    padding: 10%;
+}
+
 /* FOOTER */
+
+.footer li {
+    list-style-type: none;
+}
