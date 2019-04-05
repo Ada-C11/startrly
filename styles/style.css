@@ -42,8 +42,8 @@ main {
 }
 
 #title_and_tagline {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://external-preview.redd.it/CEYbFD42d05IHI648ZttpPwozZ5QnTnDpRWsmJhJyag.jpg?auto=webp&s=91c9209d8dbc31bffe7e5fed3e6df5a31692317f");
-  /* opacity: 0.5%; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("https://external-preview.redd.it/CEYbFD42d05IHI648ZttpPwozZ5QnTnDpRWsmJhJyag.jpg?auto=webp&s=91c9209d8dbc31bffe7e5fed3e6df5a31692317f");
   display: flex;
   color: white;
   height: 350px;
@@ -142,7 +142,7 @@ blockquote + p::before {
   padding-right: 75px;
 }
 
-.profile_photos > li {
+.profile_photos li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +152,6 @@ blockquote + p::before {
 .profile_photos img {
   border-radius: 50%;
 }
-
 
 #sponsors {
   display: flex;
@@ -173,7 +172,7 @@ blockquote + p::before {
   margin: 20px;
 }
 
-.sponsor_images > li {
+.sponsor_images li {
   margin: 10px;
 }
 
@@ -184,6 +183,6 @@ blockquote + p::before {
   margin: 40px 0px 70px 125px;
 }
 
-.footer > div {
+.footer div {
   margin-right: 150px;
 }
