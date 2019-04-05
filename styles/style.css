@@ -1,12 +1,20 @@
 div {
   font-family: 'Do Hyeon', sans-serif;
+  
 }
 
 /* Style top row */
+
+
 .nav_row {
-display: grid;
-grid-template: 100px / 3fr 1fr 1fr;
-list-style-type: none;
+  background-color:white;
+  display: grid;
+  grid-template: 2em / 70vmax 10vmax 20vmax;
+  box-shadow: 0px 10px blue;
+  list-style-type: none;
+  position: fixed;
+  margin-top: -1px;
+  padding-top: 1em;
 }
 
 .nav_row li {
@@ -14,39 +22,65 @@ list-style-type: none;
 }
 
 /* Style title header */
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/wall2.jpg");
+
+  /* Set a specific height */
+  min-height: 100px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .header {
   display: grid;
-  grid-template: 3fr 1fr 200px 1fr / 1fr 0.5fr 1fr;
+  grid-template: 1fr 2fr 1fr 200px / 1fr 0.5fr 1fr;
   text-align: center;
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 } 
 
 .title{
-  grid-area: 1/1/1/4;
-}
-
-.tagline{
-  font-size: 1.5em;
+  font-size: 4em;
   grid-area: 2/1/2/4;
 }
 
+.tagline{
+  font-size: 2em;
+  grid-area: 3/1/3/4;
+}
+
 .taglink{
-  border: 1px;
+  background-color: white;
+  border: 3px;
+  border-color: blue;
   border-style: solid;
   border-radius: 10px;
-  grid-area: 3/2/3/2;
+  grid-area: 4/2/4/2;
   height: 3em;
   margin-left: 2.5em;
   padding-top: 1.5em;
   text-decoration: none;
   width: 200px;
-  
+  -webkit-text-fill-color: blue;
+}
+
+.taglink:hover{
+  background-color: lime;
 }
 
 /* Style quote x2*/
 .quote_block {
-  border: 1px;
-  border-bottom-style: solid;
+  background-color: lime;
+  border: 5px;
   border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: blue;
   display: grid;
   grid-template: 1fr 1fr / 100px 1fr repeat(5, 25px) 50px;
   padding-top: 100px;
@@ -56,7 +90,7 @@ list-style-type: none;
 .quote {
   grid-row-start: 1;
   grid-column: 2 / -4;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Homemade Apple', cursive;
   font-size: 1.8em;
   font-style: italic;
 }
@@ -80,9 +114,9 @@ list-style-type: none;
 
 /* style h2 (section headers) x3 */
 .section_header {
-  font-size: 2em;
-  margin-bottom: 5em;
-  margin-top: 2.5em;
+  color: blue;
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 4em;
   text-align: center;
 } 
 
@@ -97,11 +131,14 @@ list-style-type: none;
   margin-right: 5%;
   margin-top: -30px;
   list-style-type: none;
+
 }
 
 .why_img {
   float: left;
   margin-right: 15px;
+  width: 100px;
+  height: 100px;
 }
 
 .why_desc {
@@ -128,6 +165,8 @@ list-style-type: none;
 
 .team_img {
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .name {
@@ -138,8 +177,6 @@ list-style-type: none;
 /* Sponsor box format */
 .sponsor_box {
   align-content: space-between;
-  border-bottom: 1px;
-  border-bottom-style: solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -152,11 +189,17 @@ list-style-type: none;
   margin-bottom: 20px;
 }
 
+section:last-of-type {
+  background-color: lime;
+}
 
 .footer {
+  border: 5px;
+  border-top-style: solid;
+  border-color: blue;
   display: grid;
   grid-template: 3em 1fr / 400px 1fr;
-  margin: 100px;
+  padding: 100px;
   
 }
 
