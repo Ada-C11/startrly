@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-
 }
 
 a {
@@ -50,21 +49,15 @@ section:last-of-type {
 }
 
 .nav-bar-list {
-  justify-content: center;
   padding: 0px;
   display: flex;
   flex-flow: row wrap;
   margin: 3%
 }
 
-.nav-bar-list > li:nth-child(1) {
-  text-align: left;
-  flex: 2;
-}
-
 .nav-bar-list > li:nth-child(2) {
   text-align: right;
-  flex: 1;
+  flex: 3;
 }
 
 .nav-bar-list li:nth-child(3) {
@@ -153,7 +146,7 @@ blockquote + p::before {
 .team {
   display: grid;
   padding: 0px;
-  margin: 20px;
+  margin: 5%;
   max-width: 100%;
   align-items: center;
   grid-template-columns: repeat(5, 1fr);
@@ -171,7 +164,7 @@ blockquote + p::before {
 
 #team-member:nth-of-type(2) {
   grid-column-start: 3;
-  grid-row-start: 1; 
+  grid-row-start: 1;
 }
 
 #team-member:nth-of-type(3) {
@@ -198,6 +191,7 @@ blockquote + p::before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0px;
+  margin: 5%;
 }
 
 .reasons > li {
@@ -206,21 +200,27 @@ blockquote + p::before {
 
 .reasons > li > img {
   float: left;
+  margin-right: 2%;
 }
 
 .sponsors {
-  margin-top: 10%;
+  margin-top: 5%;
   display: grid;
   padding: 0px;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 2px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  grid-column-gap: 2%;
 }
 
-.sponsors > div:first-child {
+.sponsors > li {
+  justify-self: center;
+}
+
+/* .sponsors > div:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  padding: 2%;
+  margin: 2%;
   grid-column-gap: 1%;
 }
 
@@ -233,8 +233,6 @@ blockquote + p::before {
 
 .sponsors > div > li {
   justify-self: center;
-}
-
-
+} */
 
 
