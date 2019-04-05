@@ -1,0 +1,293 @@
+body {
+    margin-top: 6em;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+section {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 4em;
+    
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.dark-background {
+    background-color: #1C3150;
+    color: #F2CD60;
+}
+
+p {
+    font-size:14px;
+}
+
+.section-header:hover:before, .section-header:hover:after  {
+    content:"⭐";
+}
+.parallax { 
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.flex-column-horizontally-centered {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.flex-row-vertically-centered {
+    display:flex;
+    justify-content:space-around;
+    flex-flow:row wrap;
+    align-content: center;
+}
+/* NAVIGATION */
+
+nav {
+    position: fixed; 
+    top: 0; 
+    z-index: +1 ;
+    width:100%;
+    box-shadow: 0px 4px rgba(0, 0, 0, .5);
+}
+
+nav ul {
+    display: grid;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 1em 0;
+    
+}
+
+nav li:hover {
+    color: #ffffff
+}
+
+nav ul #startrly-logo {
+    grid-column: 1/2;
+}
+
+nav ul #try {
+    grid-column: 7/8;
+}
+nav ul #about {
+    grid-column: 8/9;
+}
+
+nav .startrly-name:before, #splash .startrly-name:before{
+    content:"🌟"
+}
+
+/* SPLASH */
+#splash {
+    height:70vh;
+    min-height:450px;
+    padding: 2em 0;
+
+    background-image:     
+    linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ),url("star-background.jpg");
+
+    color: #F6F09B;
+    text-shadow: 4px 4px 4px #000000;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+#splash h1  {
+    font-size: 5em;
+    margin: .5em;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    from  { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+#splash sub  {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000000;
+    color: #F2CD60;
+}
+
+#splash a {
+    display:block;
+
+    /*font things */
+    text-decoration:none;
+    text-shadow: none;
+    font-size: 2em;
+    color: #1C3150;
+
+    /*block things */
+    padding: 1em;
+    width:200px;
+    margin: 3em auto;
+    border: 2px solid;
+    background: radial-gradient( #F2CD60, #9198e5);
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, .5);
+    border-radius: 40%;
+    
+
+}
+
+#splash a:hover {
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+/* QUOTE */
+
+.quote {
+    padding: 1em 1em;
+    max-height:12em;
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, .5);
+    background-color: #F6F09B;
+    color: #1C3144;
+
+    text-align:center;
+    font-family: 'Amatic SC', cursive;
+    font-size:2em;
+}
+
+.quote p {
+    align-self:flex-end;
+    padding: 0 4em;
+}
+
+.quote p:before {
+    content: "-- "
+}
+
+blockquote:before, blockquote:after {
+    content: '"';
+}
+
+/* WHY */
+
+#why {
+    max-height:30em;
+}
+
+#why li {
+    max-width:300px;
+    display:grid;
+    justify-content: center ;
+}
+
+#why img {
+    grid-row:1/5;
+    grid-column:1/3;
+    margin-left:1em;
+    margin-right:1em;
+}
+
+#why strong {
+    text-align: left;
+    display:block;
+    grid-column: 3/5;
+    grid-row:1/2;
+}
+
+#why p {
+    text-align: left;
+    grid-column: 3/5;
+    grid-row: 2/5;
+}
+
+/* TEAM */
+
+#team ul {
+    max-width:900px;
+    margin:auto;
+    justify-content: space-evenly;
+}
+
+#team span {
+    display:block;
+    font-size:1em;
+}
+
+#team li {
+    display: block;
+    margin: 10px;
+}
+
+
+ [alt*="profile"] {
+    border-radius:50%;
+    margin:0 2em;
+}
+
+
+/* SPONSORS */
+
+#sponsors ul {
+    max-width:1200px;
+    margin:auto;
+}
+
+#sponsors img {
+    margin: 20% .2em;
+}
+
+/* FOOTER */
+
+#footer {
+    box-shadow: inset 0px 4px rgba(0, 0, 0, .5);
+    background-color:  #F2CD60;
+    color: #1C3150;
+    padding: 1em 1em;
+    justify-content: flex-start;
+}
+
+.footer-links {
+    margin: 0 100px;
+}
+
+.footer-links li {
+    font-size:1em;
+}
+.footer-links li:hover{
+    color: #9198e5
+
+}
+
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    #why img {
+        display: none;
+    }
+
+   #footer {
+    justify-content: center;
+   }
+
+}
+

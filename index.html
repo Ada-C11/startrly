@@ -2,35 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Startrly</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>
+  <body class="dark-background">
     <div>
-
-
-      <nav>
+      <nav class="dark-background">
         <ul>
-          <li>
+          <li id="startrly-logo" class="startrly-name">
             Startrly
           </li>
-          <li>
+          <li id="try">
             Try Now!
           </li>
-          <li>
+          <li id="about">
             About
           </li>
         </ul>
       </nav>
 
 
-      <section>
-        <h1>Startrly</h1>
+      <section id = "splash" class="parallax flex-column-horizontally-centered">
+        <h1 class="startrly-name">Startrly</h1>
         <sub>A catchy tagline for a great solution</sub>
         <a href="#">Some Call to Action</a>
       </section>
 
 
-      <section>
+      <section class="quote flex-column-horizontally-centered"" id="mx-lorem">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </blockquote>
@@ -40,25 +42,25 @@
       </section>
 
 
-      <section>
-        <h2>Why?</h2>
-        <ul>
+      <section  id="why"> 
+        <h2 class="section-header">Why?</h2>
+        <ul class="flex-row-vertically-centered">
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="http://www.placekitten.com/100/100" />
             <strong>Comfortable</strong>
             <p>
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="http://www.placekitten.com/100/100" />
             <strong>Robust</strong>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="http://www.placekitten.com/100/100" />
             <strong>Convenient</strong>
             <p>
               Itaque earum rerum hic tenetur a sapiente delectus.
@@ -68,7 +70,7 @@
       </section>
 
 
-      <section>
+      <section class="quote flex-column-horizontally-centered" id="mx-ipsum">
         <blockquote>
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </blockquote>
@@ -78,9 +80,9 @@
       </section>
 
 
-      <section>
-        <h2>Meet the team</h2>
-        <ul>
+      <section id="team">
+        <h2 class="section-header">Meet the team</h2>
+        <ul class="flex-row-vertically-centered">
           <li>
             <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
             <span>Kari Kiwi</span>
@@ -110,30 +112,30 @@
       </section>
 
 
-      <section>
-        <h2>Sponsors</h2>
-        <ul>
+      <section  id="sponsors">
+        <h2 class="section-header">Sponsors</h2>
+        <ul class="flex-row-vertically-centered ">
           <li>
-            <img src="http://via.placeholder.com/300x100" />
+            <img src="http://www.placepuppy.net/300/100" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/250x125" />
+            <img src="http://www.placepuppy.net/250/125" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/275x70" />
+            <img src="http://www.placepuppy.net/275/70" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/250x120" />
+            <img src="http://www.placepuppy.net/250/120" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/220x100" />
+            <img src="http://www.placepuppy.net/220/100" />
           </li>
         </ul>
       </section>
 
 
-      <section>
-        <div>
+      <section class="flex-row-vertically-centered" id="footer">
+        <div class="footer-links">
           <h3>Support</h3>
           <ul>
             <li>
@@ -150,7 +152,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-links">
           <h3>About</h3>
           <ul>
             <li>
@@ -165,7 +167,6 @@
           </ul>
         </div>
       </section>
-
     </div>
   </body>
 </html>
