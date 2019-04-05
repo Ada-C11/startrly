@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* lists */
 li {
     list-style-type: none;
@@ -31,7 +35,7 @@ nav ul {
     flex-wrap: wrap;
 }
 
-#startrly{
+#startrly {
     padding-left: 2%
 }
 
@@ -53,7 +57,8 @@ nav ul {
 }
 
 #companyname {
-    font-size: 4em;
+    font-size: 5em;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #tagline {
@@ -87,6 +92,7 @@ nav ul {
     border: 1px;
     border-top-style: solid;
     border-bottom-style: solid;
+    background-color: lightcyan;
 }
 
 blockquote {
@@ -121,9 +127,21 @@ blockquote::before, blockquote::after {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+#team > li {
+    padding: 20px 75px 20px 75px;
+}
+
+#team > li > span {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    line-height: 200%;
 }
 
 #team > li > img {
@@ -146,8 +164,7 @@ blockquote::before, blockquote::after {
     border-top-style: solid;
     display: flex;
     flex-direction: row;
-    
-   
+    background-color: lightgray
 }
 
 .footernav > div {
