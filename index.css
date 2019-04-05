@@ -55,13 +55,14 @@ blockquote {
   text-align: right
 }
 
-.why .flexbox {
+.flexbox {
   display: flex;
   flex-direction: row;
-  align-content: space-around
+  align-content: space-around;
+
 }
 
-.why .flexbox li {
+.flexbox li {
   max-width: 33%;
   list-style-type: none;
 
@@ -80,8 +81,23 @@ blockquote {
   float: left;
 }
 
+.sponsers .flexbox {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin: .5em; */
+}
+
+.sponsers .flexbox li {
+  margin: .3em;
+}
+
+.sponsers .flexbox img {
+
+}
 /* .why .flexbox li:first-child {
   grid-row: 1;
   grid-column: 1
 } */
+
+
 
