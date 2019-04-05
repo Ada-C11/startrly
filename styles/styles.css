@@ -1,8 +1,8 @@
-/* body {
-  background-image: url("https://trianglify.io/p/w:1440!h:900!x:BuGn!v:0.752!c:0.08!s:2hhem");
-  background-size: cover;
-  background-color: #cccccc;
-} */
+body {
+  background-image: url("file:///Users/carlabosco/Downloads/trianglify%20(2).svg");
+  width: 1440px;
+  height: 900px;
+}
 
 li {
   list-style: none;
@@ -62,12 +62,12 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .home-container {
-  background-image: "trianglify.png"; 
-  background: linear-gradient(white, aqua);
+  /* background-image: "trianglify.png"; 
+  background: linear-gradient(white, aqua); */
   height: 48rem;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@ h1 {
 }
 
 .why-grid {
-  background-color: aqua;
+  /* background-color: aqua; */
   justify-content: center;
   width: 100%;
   font-family: 'Quicksand', sans-serif;
@@ -237,7 +237,7 @@ h1 {
 }
 
 .footer {
-  background-color: azure;
+  /* background-color: azure; */
   font-family: 'Quicksand', sans-serif;
   display: grid;
   grid-template-columns: 3% 22% 75%;
