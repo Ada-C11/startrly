@@ -1,54 +1,44 @@
 /* top nav */
 nav ul {
-    margin-top: 2.5em;
     display: flex;
+    justify-content: space-between;
+    margin: 2.5em 2em 5em 2em;
     list-style-type: none;
     font-weight: bold; 
     font-size: 1.5em;
-    /* flex: 1; */
 }
 
-#startrly {
-    margin-right: auto;
+#startrly{
+    padding-left: 2%
 }
 
 #trynow {
-    margin-left: 20em;
+    padding-left: 30%;
 }
 
 #about {
-    margin-left: auto;
-    margin-right: 4em;
+    padding-right: 5%;
 }
 
 /* brand */
 .brand {
-    display:flex;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    display: grid;
-    grid-template-rows: 70% 5% 15%;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-areas:
-        ". n ."
-        ". t ."
-        ". b .";
+    text-align: center;
+    justify-content: center;
 }
 
 #companyname {
-    grid-area: n;
     font-size: 4em;
-    margin-top: 1em;
 }
 
 #tagline {
-    grid-area: b;
+    position: static; 
     font-weight: bold;
     font-size: 2.5em;
-    position: static; 
     line-height: normal;
-    padding-bottom: 7em;
+    padding-bottom: 1.5em;
 }
 
 .button {
@@ -57,10 +47,9 @@ nav ul {
     color: black;
     padding: 20px;
     text-decoration: none;
-    grid-area: b;
-    font-size: 2.25em;
+    font-size: 2em;
     width: 300px;
-
+    margin-bottom: 2.5em;
 }
 
 .button:hover {
@@ -83,7 +72,8 @@ blockquote {
     font-style: italic;
     margin-left: 5em;
     margin-right: 5em;
-    margin-top: 5em;
+    margin-top: 3em;
+    line-height: 200%;
 }
 
 blockquote::before, blockquote::after {
@@ -99,7 +89,7 @@ blockquote::before, blockquote::after {
     font-size: 2em;
     margin-left: auto;
     margin-right: 4em;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 }
 
 /* the team */
