@@ -80,6 +80,34 @@ nav li {
 
 /* MEET THE TEAM */
 
+.team h2 {
+    text-align: center;
+}
+
+.team ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team li {
+    list-style-type: none;
+    text-align: center;
+    width: 30%;
+
+}
+
+.team span {
+    display: block;
+
+}
+
+.team img {
+    border-radius: 50%;
+}
+
 /* SPONSORS */
 
 /* FOOTER */
