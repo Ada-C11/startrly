@@ -152,10 +152,14 @@ blockquote::before, blockquote::after {
 .sponsor {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 5em;
     flex-wrap: wrap;
+}
+
+.sponsor > li > img {
+    padding: 5px 10px 5px 10px; 
 }
 
 /* footer nav */
