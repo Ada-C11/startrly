@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* lists */
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-inline-start: unset;
+}
+
+/* img {
+    padding: 0px 10px 0px 10px;
+} */
+
+/* titles */
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+/* top nav */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5em 2em 5em 2em;
+    font-weight: bold; 
+    font-size: 1.5em;
+    flex-wrap: wrap;
+}
+
+#startrly {
+    padding-left: 2%
+}
+
+#trynow {
+    padding-left: 30%;
+}
+
+#about {
+    padding-right: 5%;
+}
+
+/* brand */
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#companyname {
+    font-size: 5em;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#tagline {
+    position: static; 
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: normal;
+    padding-bottom: 1.5em;
+}
+
+.button {
+    background-color:turquoise;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    width: 300px;
+    margin-bottom: 2.5em;
+}
+
+.button:hover {
+    background-color:  black;
+    color: turquoise;
+}
+
+/* quote sections */
+.quote {
+    display: flex;
+    display: grid;
+    border: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    background-color: lightcyan;
+}
+
+blockquote {
+    justify-content: center;
+    font-size: 2em;
+    font-style: italic;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 3em;
+    line-height: 200%;
+}
+
+blockquote::before, blockquote::after {
+    content: '"';
+}
+
+.quote p::before {
+    content: "--"
+}
+
+.quote p {
+    font-style: italic;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: 4em;
+    margin-bottom: 4em;
+}
+
+/* why section */
+#why {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+#why > li {
+    padding: 0px 40px 0px 40px;
+}
+
+#why > li > img {
+    float: left;
+    margin-right: 10px;
+}
+
+/* the team */
+#team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+#team > li {
+    padding: 20px 75px 20px 75px;
+}
+
+#team > li > span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 200%;
+}
+
+#team > li > img {
+    border-radius: 100%;
+}
+
+/* sponsor */
+.sponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+}
+
+.sponsor > li > img {
+    padding: 5px 10px 5px 10px; 
+}
+
+/* footer nav */
+.footernav {
+    border: 1px;
+    border-top-style: solid;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray
+}
+
+.footernav > div {
+    margin: 40px 100px 40px 100px;
+}
+
+.footernav > div > h3 {
+    text-align: left;
+}
+
