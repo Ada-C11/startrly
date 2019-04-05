@@ -2,7 +2,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 3fr 50px;
 } */
-
 section {
     border-bottom: 1px solid lightgray;
 }
@@ -195,9 +194,13 @@ font-size: 10px;
     padding-inline-start: 0%;
 }
 
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+
 .support h3, li {
     padding-left: 100px;
+    font-family: 'Roboto';
 }
+
 
 
 
