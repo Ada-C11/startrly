@@ -1,0 +1,201 @@
+/* CSS Startly */
+   
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  list-style-type: none;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  color: turquoise;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;;
+}
+
+h1{
+  font-size: 40px;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 75px);
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: turquoise;
+}
+
+.tagline {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+a[href="#"]{
+  display: inline-block;
+  background-color: white; 
+  border: 2px solid lightgrey;
+  border-radius: 10px; 
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  width: 250px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.quote1{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 25px);
+  text-align: center;
+  padding-top: 60px;
+  font-style: italic;
+  font-size: 21px;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 65px;
+}
+
+.quote1 p{
+  margin-left: 300px;
+}
+
+.quote1 blockquote:before, .quote1 blockquote:after {
+    content: '"';
+}
+.quote1 blockquote + p:before {
+  content: "--";
+}
+
+.content {
+  text-align: center;
+  padding-top: 80px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.content ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  text-align: left;
+  padding-top: 50px;
+  font-size: 16px;
+}
+
+.content ul li img{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100px;
+  width: 100px;
+  padding-left: 10px; 
+  padding-right: 10px;
+  padding-bottom: 25px;
+  float: left
+}
+
+.quote2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 25px);
+  text-align: center;
+  padding-top: 60px;
+  font-style: italic;
+  font-size: 21px;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 65px;
+}
+
+.quote2 p{
+    margin-left: 300px;
+}
+.quote2 blockquote:before, .quote2 blockquote:after {
+  content: '"';
+}
+.quote2 blockquote + p:before {
+  content: "--";
+}
+
+.team {
+  padding-top: 80px;
+  text-align: center;
+} 
+
+.team ul {
+  grid-row: 2 span 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 280px;
+  margin-right: 280px;
+  list-style-type: none;
+}
+
+.team ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  padding: 40px;
+  padding-left: 2
+
+}
+
+.team ul li img{
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  border-radius: 90px;
+}
+
+.team ul li > * {
+  padding: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+.sponsors{
+  display: flex;
+  border-bottom: 1px solid gray;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content:space-around;
+  margin: 40px;
+  padding-left: 30px;
+}
+
+.footer{
+  display: flex;
+  max-width: 700px;
+  justify-content: space-around;
+  border-bottom: none;
+  margin-top: 20px;
+}
+
+.footer ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0px;
+  list-style-type: none;
+}
