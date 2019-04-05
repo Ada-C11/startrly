@@ -1,8 +1,6 @@
-/* div {
-display: flex;
-flex-direction: row;
-flex-flow:  row wrap;
-} */
+div {
+  font-family: 'Do Hyeon', sans-serif;
+}
 
 /* Style top row */
 .nav_row {
@@ -18,24 +16,35 @@ list-style-type: none;
 /* Style title header */
 .header {
   display: grid;
-  grid-template: 3fr 1fr 1fr 1fr / 1fr;
+  grid-template: 3fr 1fr 200px 1fr / 1fr 0.5fr 1fr;
   text-align: center;
 } 
 
 .title{
-
+  grid-area: 1/1/1/4;
 }
 
 .tagline{
-
+  font-size: 1.5em;
+  grid-area: 2/1/2/4;
 }
 
 .taglink{
-
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  grid-area: 3/2/3/2;
+  height: 3em;
+  margin-left: 2.5em;
+  padding-top: 1.5em;
+  text-decoration: none;
+  width: 200px;
+  
 }
 
 /* Style quote x2*/
 .quote_block {
+  border: 1px;
   border-bottom-style: solid;
   border-top-style: solid;
   display: grid;
@@ -47,18 +56,34 @@ list-style-type: none;
 .quote {
   grid-row-start: 1;
   grid-column: 2 / -4;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+.quote::before {
+  content: "\"";
+}
+
+.quote::after {
+  content: "\"";
+}
+
+.quote_author::before {
+  content: "--"
 }
 
 .quote_author {
   grid-row-start: 2;
-  grid-column: 4 / -3;
+  grid-column: 3 / -3;
 }
 
 /* style h2 (section headers) x3 */
 .section_header {
-  text-align: center;
-  margin-top: 2.5em;
+  font-size: 2em;
   margin-bottom: 5em;
+  margin-top: 2.5em;
+  text-align: center;
 } 
 
 /* style why-boxes section */
@@ -76,6 +101,7 @@ list-style-type: none;
 
 .why_img {
   float: left;
+  margin-right: 15px;
 }
 
 .why_desc {
@@ -118,7 +144,6 @@ list-style-type: none;
   flex-flow: row wrap;
   justify-content: center;
   padding-left: 35px;
-  padding-bottom: 90px
 }
 
 .sponsor {
@@ -128,6 +153,17 @@ list-style-type: none;
 }
 
 
+.footer {
+  display: grid;
+  grid-template: 3em 1fr / 400px 1fr;
+  margin: 100px;
+  
+}
+
+.footer_list {
+  list-style-type: none;
+  padding: 0;
+}
 
 
 
