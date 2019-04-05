@@ -2,9 +2,26 @@
   display: grid;
   grid-template-rows: auto;
 } */
-
+h1, h2, h3 {
+  font-family: 'Oleo Script', cursive;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+nav ul {
+  margin: 0;
+  padding: 1.5em 0;
+}
+nav, footer {
+  background-color: #015249;
+  /* color: #A5A5AF; */
+  color: beige;
+}
+.team-members {
+  background-color: #77C9D4;
+}
 section {
-  padding: 2em;
+  padding: 4em 2em;
 }
 
 h2 {
@@ -12,7 +29,7 @@ h2 {
   text-align: center;
 }
 .tagline {
-  background: aquamarine;
+  background: #57BC90;
   display: grid;
   align-items: center;
   /* justify-content: center; */
@@ -32,18 +49,21 @@ h2 {
   grid-row: 2;
 }
 .tagline a {
+  font-size: .8em;
   text-decoration: none;
   grid-row: 3;
   display: block;
   border-radius: 15px;
-  border: 3px solid;
+  border: 2px solid;
   padding: 8px;
-  border-color: black
+  border-color: darkslategray
 }
 
 .quote {
   display: grid;
   align-items: center;
+  background-color: #77C9D4;
+  /* background-color: #A5A5AF; */
   background-color: beige;
 }
 
@@ -106,22 +126,72 @@ blockquote {
   justify-content: center;
 }
 
+
 .sponsers .flexbox img {
   margin: .3em
 }
 
 .team-members .flexbox li {
-  margin: 0 1em;
+  /* display: flex;
+  justify-content: center; */
+  margin: 0 2em;
   flex-direction: column;
+
 }
 
 .team-members .flexbox li img {
   border-radius: 50%;
 }
-/* .why .flexbox li:first-child {
-  grid-row: 1;
-  grid-column: 1
+
+
+
+nav ul, footer {
+
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 10% 10% 10% 10%;
+  /* grid-template-columns: 1fr, 1fr, 2fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr; */
+}
+
+nav li:first-child {
+  grid-column-start: 2;
+
+}
+
+nav li:nth-child(2) {
+  grid-column-start: 5;
+
+}
+nav li:last-child {
+  grid-column-start: 7;
+}
+
+/* footer {
+  display: grid;
+  grid-template-columns: grid-template-columns: 10%, 10%, 15%, 25%, 10%, 10%, 10%, 10%;
+} */
+footer div:first-child {
+  grid-column-start: 2;
+}
+footer div:last-child {
+  grid-column-start: 4;
+}
+
+footer ul {
+  /* text-align: left; */
+  /* list-style-type: none;
+  list-style-position: outside; */
+
+
+
+  padding-left: 0pt;
+}
+/* footer div {
+  display: flex;
+  flex-direction: column;
 } */
 
-
+li {
+  list-style-type: none;
+  /* display: block */
+}
 
