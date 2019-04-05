@@ -50,6 +50,8 @@ nav li {
 
 .selling-points img {
     float: left;
+    padding-right: 1.5vw;
+    padding-bottom: 1vw;
 }
 
 .selling-points ul {
@@ -87,9 +89,9 @@ nav li {
     color: red;
 }
 
-.selling-points img {
-    padding-bottom: 0px;
-}
+/* .selling-points img {
+    
+} */
 
 .selling-points strong,
 .selling-points p {
