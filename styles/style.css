@@ -15,7 +15,6 @@ nav li {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: red; */
     border-bottom: 1px solid grey;
 }
 
@@ -31,7 +30,6 @@ nav li {
 }
 
 .testimonial p {
-    /* background-color: olive; */
     text-align: right;
     margin-top: 10vh;
     margin-right: 25vh;
@@ -66,32 +64,13 @@ nav li {
 }
 
 .selling-points ul li {
-    /* border: 2px solid pink; */
-
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
 
     margin: 16px;
 } 
 
-/* .selling-points ul > li > *:first-child {
-    border: 5px solid green; 
-    margin-right: 1.5vw;
-    height: 15vw;
-} */
-
-/* .selling-points ul > li > *:last-child {
-    border: 5px solid purple;
-} */
-
 .selling-points p {
     color: red;
 }
-
-/* .selling-points img {
-    
-} */
 
 .selling-points strong,
 .selling-points p {
