@@ -86,6 +86,9 @@ ul {
 }
 
 .why img {
+  width: 20%;
+  height: auto;
+  padding: 5px;
   align-self: flex-start;
   padding: 16px;
 }
@@ -136,6 +139,7 @@ a.button {
   font-style: italic;
   font-family: 'Noto Serif', serif;
   font-size: 1rem;
+  color: rgb(250, 137, 156);
 }
 
 blockquote {
@@ -143,6 +147,7 @@ blockquote {
   font-family: 'Noto Serif', serif;
   font-size: 1.25em;
   line-height: 175%;
+  
 }
 
 section.sponsors {
