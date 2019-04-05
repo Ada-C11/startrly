@@ -43,7 +43,10 @@ a[href="#"] {
     color: white;
     background-color: #5A827F;
     padding: 10px 10px;
-    border-style: 2px solid
+    border-style: 2px solid;
+    margin: 5px;
+    text-decoration: none;
+    
     
 }
 a:hover {
@@ -97,6 +100,7 @@ a:hover {
 .cfo {
     grid-column: 2/3;
     grid-row: 1/2;
+
 }
 .cmo {
     grid-column: 4/5;
@@ -131,13 +135,15 @@ a:hover {
 .sponsors {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
 }
+
 
 .sponsors:first-child {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: 5px;
 }
 .sponsors:second-child {
     grid-column: 2/3;
@@ -156,7 +162,15 @@ a:hover {
     grid-row: 2/3;
 }
   
-
-
+/* 
+.button.round {
+    border-radius: 1000px;
+    display: inline-block;
+    background-color: #008CBA;
+    border-color: #007095;
+    color: white;
+    padding: 0.88889rem 1.77778rem 0.94444rem 1.77778rem;
+    text-decoration: none;
+  } */
 
 
