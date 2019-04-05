@@ -1,21 +1,29 @@
 body {
   margin: 0px;
   font-family: 'Merriweather', serif;
-  /* font-size: 100% */
 }
 
+/* nav bar has three columns */
 nav ul {
   display: grid;
   grid-template-columns: 70% 15% 15%;
-  position: fixed;
 }
 
+/* change background color and fix position of nav */
+.main-container nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: slategray;
+  border-bottom: #333
+}
+
+/* align the welcome sub and button */
 .welcome {
-  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px
+  margin: 10%
 }
 
 .welcome h1, sub {
@@ -23,10 +31,12 @@ nav ul {
   padding: 5px
 }
 
+/* make button black and green on hover */
 .button {
   display: flex;
   font-size: 1em;
-  height: 5vh;
+  padding: 10px;
+  margin-bottom: 20px;
   text-decoration: none;
   background-color: black;
   border-radius: 20px;
@@ -38,7 +48,6 @@ nav ul {
 .welcome div {
   border: 2px solid transparent;
   border-radius: 20px;
-  width: 15%
 }
 
 .button:hover {
@@ -49,6 +58,7 @@ nav ul {
 
 }
 
+/* align quotes to center and author to bottom right */
 .quote {
   padding: 1em;
   border-top: 1px solid #333;
@@ -76,6 +86,7 @@ font-size: 1em;
 margin-bottom: 5vh;
 }
 
+/*  */
 .why-startrly h2{
   text-align: center;
 }
