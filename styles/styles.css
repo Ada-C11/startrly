@@ -1,17 +1,21 @@
 .container {
-    grid-column: 100%;
-    grid-row: 9% repeat(7, 13%)
+    grid-column: 1fr 1fr 1fr;
+    margin: auto;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     display: grid;
-
+    border: blue 2px dotted;
 }
 
 .header {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     background-color: aqua;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+  min-height: 100px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -19,44 +23,74 @@ nav ul{
     padding: 10px 20px 50px 20px;
 }
 
-/* nav ul:first-child {
-    justify-items: flex-start
-}/*  */
+
+ /* nav ul:first-child {
+    grid-column: 1/2;
+    justify-content: flex-start;
+} */
 
 
 
 .title {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px 20px 50px 20px;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+  min-height: 100px;
 }
 
 .title h1 {
-    padding: 10px 20px 50px 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .title sub {
     padding: 10px 20px 50px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    position: static; 
+    line-height: normal;
+}
+
+
+.title a {
+    border-style: outset;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .title a:hover {
-    background-color: black;
+    background-color: lightcoral;
 }
 
 
-.quote {
-    grid-column: 1 / 2;
+.quote, .second-quote {
+    grid-column: 1 / 4;
     grid-row: 3 / 4;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px 20px 50px 20px;
+    font-family: 'Slabo 27px', serif;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+    min-height: 100px;
+    display: block;
+    font-style: italic;
+    background: lightgray
 }
+
+.quote-author {
+    float: right;
+} 
 
 /* .quote blockquote {
     white-space: pre-line;
@@ -69,37 +103,64 @@ nav ul{
 } */
 
 .why {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 10px 20px 50px 20px;
+   border-bottom: lightblue 2px solid;
+}
+
+.why h2 {
+    text-align: center;
 }
 
 .why ul {
     list-style-type: none;
-    flex-wrap: wrap;
 }
 
-.why ul li {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
+
+.why-first, .why-first p {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 25vw;
+    display: inline-block;
+    background-color: lightcoral;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+    min-height: 100px;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
+
+
+
+.why-second, .why-second p {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    width: 25vw;
+    display: inline-block;
+    background-color: lightblue;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+    min-height: 100px;
+    justify-content: space-evenly;
+}
+
+.why-third, .why-third p {
+    grid-column: 3 / 4;
+    grid-row: 4/ 5;
+    width: 25vw;
+    display: inline-block;
+    background-color: lightyellow;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+    min-height: 100px;
+    justify-content: space-evenly;
+}
+
+
 
 .second-quote {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 20px 50px 20px;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+  min-height: 100px;
 }
 
 .team {
@@ -109,13 +170,17 @@ nav ul{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+  min-height: 100px;
 }
 
 .team h2 {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: 10px 20px 50px 20px;
+    padding: 10px 60px 20px 40px;
+    min-width: 100px;
+    min-height: 100px;
+    
 }
 
 .team ul {
@@ -125,14 +190,37 @@ nav ul{
     justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.team ul li {
+    padding: 30px 30px 30px 30px;
+}
+
+.team ul li img {
+    border-radius: 50%;
+}
+
+.team-name {
+    display: block;
+}
+
+.team-name + span {
+    float: center;
 }
 
 .sponsors {
     grid-column: 1 / 2;
     grid-row: 7/ 8;
+    border-bottom: lightblue 2px solid;
+    min-width: 100px;
+  min-height: 100px;
 }
 
 .support {
     grid-column: 1 / 2;
     grid-row: 8 / 9;
+    min-width: 100px;
+  min-height: 100px;
 }
