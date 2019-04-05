@@ -4,14 +4,14 @@ body {
 
 .container{
   display: grid;
-  grid-template: auto 2fr 2fr 2fr 2fr 2fr 3.5fr 2fr auto / 2fr 1fr 1fr;
+  grid-template: auto 2.5fr 2fr 2fr 2fr 1.75fr 1.75fr 2fr auto / 2fr 1fr 1fr;
   grid-template-areas: 
   "n n n"
   "t t t"
   "q1 q1 q1"
   "w w w"
-  "w w w"
   "q2 q2 q2"
+  "team team team"
   "team team team"
   "s s s"
   "f f f";
@@ -122,88 +122,72 @@ blockquote:after {
 
 .why {
   grid-area: w; 
-  /* max-height:30em; */
-  /* display: flex;
-  flex-direction: row; */
   list-style: none;
+  border-bottom: solid;
+  border-width: 1px;
 }
 .why h2 {
   text-align: center;
 }
 .why ul {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* .why img {
- 
+.why img {
+  float: left;
+  margin: 0 1em 1em 0;
 }
-.why #top {
-  
-  /* display: flex;
-  justify-content: center; }*/
-
- /* .why li {
-  max-width:;
-  
-} */
 
 .why ul li{
-  display: flex;
+  /* display: flex; */
   list-style-type: none;
-  padding-right:  ; 
-  /* margin: 0;
-  padding: 0; */
+  /* padding-top: 5em; */
 }
+
   
-
-
-/* .why p {
-  width: 10em;
-} */
-
 .quote2 {
   grid-area: q2;
+  border-bottom: solid;
+  border-width: 1px;
+  margin-top: 10em;
 }
 
 .team {
   grid-area: team;
-  flex-wrap: flex; 
-  flex-direction: row;
-  justify-content: center;
-  
+  border-bottom: solid;
+  border-width: 1px;
 }
 
-/* .team h2 {
+.team h2 {
   text-align: center;
-  padding-bottom: 10em;
-} */
+  padding-bottom: 2em;
+}
+
+.team ul li{
+  margin-bottom: 3em;
+
+}
 
 .team img {
   border-radius: 50%;
+  float: top;
   
 }
-.first-three {
+
+.first-3 {
+  list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
-.last-two {
-  display: flex;
-  justify-content: space-evenly;
-}
-/* .team span {
+ .team span {
   bottom: 0em; 
   line-height: normal;
-  padding-bottom: ;
 }
-
-.team ul {
-  list-style-type: none;
-}
-.team ul li {
-  display: inline;
-} */
 
 .sponsors {
   grid-area: s;
