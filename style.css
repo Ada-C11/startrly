@@ -20,6 +20,7 @@ ul li {
 
 .flex-box-nav {
     display: flex;
+    height: 7rem;
 }
 
 .flex-box-nav > li {
@@ -40,8 +41,7 @@ ul li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 30%;
-    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .flex-box-startrly div:nth-child(2), .flex-box-startrly div:nth-child(3){
@@ -68,7 +68,7 @@ ul li {
     justify-content: center;
     align-items: center;
     background-color:rgba(192,192,192,0.2);
-    height: 30%;
+    height: 15rem;
 }
 
 .quote blockquote:before{
@@ -81,8 +81,8 @@ ul li {
 
 .quote p {
     align-self: flex-end;
-    margin-right: 3rem;
-    padding-bottom: 3rem;
+    /* margin-right: 3rem; */
+    /* padding-bottom: 1rem; */
 }
 
 .quote p:before {
