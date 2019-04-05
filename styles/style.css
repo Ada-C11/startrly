@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 a {
@@ -29,10 +30,18 @@ body {
   font-weight: 400;
 }
 
+section {
+  border-bottom: solid 2px black;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
 .container {
   max-width: auto;
   display: grid;
-  grid-template-rows: 2% 1fr 1fr 2fr 1fr 3fr 3fr 5%;
+  grid-template-rows: 2% 2fr 1fr 1fr 1fr 2fr 2fr 5%;
 }
 
 .nav-bar {
@@ -116,7 +125,6 @@ blockquote + p::before {
 }
 
 .footer {
-  border-top: solid 2px grey;
   display: flex;
   flex-direction: row wrap;
   justify-content: flex-start;
