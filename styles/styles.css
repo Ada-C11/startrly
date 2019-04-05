@@ -1,7 +1,7 @@
 .container {
-    grid-column: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-row: repeat(7, 1fr); */
     margin: auto;
-    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     display: grid;
     border: blue 2px dotted;
 }
@@ -12,7 +12,7 @@
     background-color: aqua;
     border-bottom: lightblue 2px solid;
     min-width: 100px;
-  min-height: 100px;
+    height: 4em;
 }
 
 nav ul {
@@ -88,6 +88,11 @@ nav ul {
     background: lightgray
 }
 
+blockquote, blockquote + p {
+    grid-column: 2 / 3;
+    width: 500px
+}
+
 .quote-author {
     float: right;
 } 
@@ -103,7 +108,11 @@ nav ul {
 } */
 
 .why {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
    border-bottom: lightblue 2px solid;
+   flex-direction: row;
+   justify-content: space-around;
 }
 
 .why h2 {
@@ -112,19 +121,21 @@ nav ul {
 
 .why ul {
     list-style-type: none;
+    justify-content: space-evenly;
 }
 
 
 .why-first, .why-first p {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    flex-direction: row;
     width: 25vw;
     display: inline-block;
     background-color: lightcoral;
     border-bottom: lightblue 2px solid;
-    min-width: 100px;
+    min-width: 200px;
     min-height: 100px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 
@@ -132,39 +143,51 @@ nav ul {
 .why-second, .why-second p {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    flex-direction: row;
     width: 25vw;
     display: inline-block;
     background-color: lightblue;
     border-bottom: lightblue 2px solid;
-    min-width: 100px;
+    min-width: 200px;
     min-height: 100px;
-    justify-content: space-evenly;
+
+    
 }
 
 .why-third, .why-third p {
     grid-column: 3 / 4;
     grid-row: 4/ 5;
     width: 25vw;
+    flex-direction: row;
     display: inline-block;
     background-color: lightyellow;
     border-bottom: lightblue 2px solid;
-    min-width: 100px;
+    min-width: 200px;
     min-height: 100px;
-    justify-content: space-evenly;
+    /* border-width: 2px solid orange; */
+}
+
+.why ul li img {
+    float: left;
+}
+
+.why ul li strong p {
+    float: right;
 }
 
 
 
 .second-quote {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 5 / 6;
+    flex-direction: row;
     border-bottom: lightblue 2px solid;
     min-width: 100px;
   min-height: 100px;
 }
 
 .team {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 6 / 7;
     display: inline-flex;
     flex-direction: row;
@@ -176,6 +199,7 @@ nav ul {
 }
 
 .team h2 {
+    grid-column: 2 / 3;
     justify-content: center;
     padding: 10px 60px 20px 40px;
     min-width: 100px;
@@ -195,11 +219,18 @@ nav ul {
 }
 
 .team ul li {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
     padding: 30px 30px 30px 30px;
 }
 
 .team ul li img {
     border-radius: 50%;
+    align-items: center;
+    padding:1px;
+    border:1px solid gray;
 }
 
 .team-name {
@@ -211,16 +242,32 @@ nav ul {
 }
 
 .sponsors {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 7/ 8;
     border-bottom: lightblue 2px solid;
     min-width: 100px;
-  min-height: 100px;
+    min-height: 100px;
 }
 
 .support {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 8 / 9;
     min-width: 100px;
-  min-height: 100px;
+    min-height: 100px;
+    display: inline;
+    justify-content: space-around;
+}
+
+.support-demo {
+    width: 20%;
+    height: 100px;
+    border: 1px solid red;
+    margin-right: 10px;
+}
+
+.about {
+    width: 20%;
+    height: 100px;
+    border: 1px solid red;
+    margin-right: 10px;
 }
