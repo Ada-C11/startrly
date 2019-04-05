@@ -160,9 +160,10 @@
 }
   
 .team {
-    background-color: hotpink;
+    /* background-color: hotpink; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 3%
 }
   
@@ -170,20 +171,19 @@
     display: flex;
     justify-content: center;
 }
-  
-.team > ul {
+
+.top-three, .bottom-two {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
     justify-content: center;
-    /* align-items: center */
+    flex-wrap: wrap;
 }
 
 .team > ul li {
     display: flex;
     flex-direction: column;
     align-items:center;
+    padding-right: 5%;
+    padding-left: 5%
 }
 
 .team > ul img {
