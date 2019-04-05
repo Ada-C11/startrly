@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: 'Merriweather', serif;
+  width: 100%
 }
 
 /* nav bar has three columns */
@@ -35,11 +36,11 @@ nav ul {
 .button {
   display: flex;
   font-size: 1em;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
   text-decoration: none;
   background-color: black;
-  border-radius: 20px;
+  border-radius: 8px;
   color: white;
   align-items: center;
   justify-content: center;
@@ -47,14 +48,14 @@ nav ul {
 
 .welcome div {
   border: 2px solid transparent;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 
 .button:hover {
   background-color: greenyellow;
   color: black;
   border: 2px solid transparent;
-  border-radius: 20px;
+  border-radius: 8px;
 
 }
 
