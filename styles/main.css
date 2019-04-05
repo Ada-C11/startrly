@@ -91,21 +91,22 @@ ul {
   padding: 5px;
   align-self: flex-start;
   padding: 16px;
+  float: left;
 }
 
 
 a.button {
-  border: solid 2px pink;
+  /* border: solid 2px pink; */
   border-radius: 2px;
-  color: pink;
+  background-color: pink;
   padding: 1em 1.5em;
   text-transform: uppercase;
   text-decoration: none;
   margin: 2rem;
 }
 
-.welcome a:hover {
-  
+ a:hover {
+  background-color: rgb(255, 174, 187);
 }
 
 .team ul {
@@ -137,17 +138,20 @@ a.button {
   align-self: flex-end;
   padding-right: 3em;
   font-style: italic;
-  font-family: 'Noto Serif', serif;
+  /* font-family: 'Noto Serif', serif; */
   font-size: 1rem;
-  color: rgb(250, 137, 156);
+  color: rgb(0, 60, 255);
+}
+
+strong {
+  color: rgb(0, 60, 255);
 }
 
 blockquote {
   font-style: italic;
-  font-family: 'Noto Serif', serif;
+  /* font-family: 'Noto Serif', serif; */
   font-size: 1.25em;
-  line-height: 175%;
-  
+  line-height: 175%;  
 }
 
 section.sponsors {
