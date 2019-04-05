@@ -119,6 +119,7 @@ blockquote + p::before {
 }
 
 .team_profiles {
+  background: lightpink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,13 +127,53 @@ blockquote + p::before {
 
 .profile_photos {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .profile_photos > li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 75px 20px 75px;
 }
 
+.profile_photos img {
+  border-radius: 50%;
+}
+
+
+.sponsors {
+  background: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsor_images {
+  background: navy;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.sponsor_images > li {
+  background: hotpink;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  /* grid-template-columns: 1fr 1fr 3fr; */
+  margin: 40px 0px 70px 125px;
+}
+
+.footer > div {
+  margin-right: 150px;
+}
