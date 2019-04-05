@@ -1,0 +1,149 @@
+
+h1, h2, h3 {
+  font-family: 'Oleo Script', cursive;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+nav ul {
+  margin: 0;
+  padding: 1.5em 0;
+}
+nav, footer {
+  background-color: #015249;
+  color: beige;
+}
+footer {
+  padding-bottom: 2em
+}
+.team-members {
+  background-color: #77C9D4;
+}
+section {
+  padding: 4em 2em;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.tagline {
+  background: #57BC90;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 35% 1fr 1fr ;
+  font-size: 1.6em
+}
+.tagline * {
+  justify-self: center;
+}
+.tagline h1 {
+  font-size: 2em;
+  grid-row: 1;
+}
+
+.tagline sub {
+  grid-row: 2;
+}
+.tagline a {
+  font-size: .8em;
+  text-decoration: none;
+  grid-row: 3;
+  display: block;
+  border-radius: 15px;
+  border: 2px solid;
+  padding: 8px;
+  border-color: darkslategray
+}
+
+.quote {
+  display: grid;
+  align-items: center;
+  background-color: #77C9D4;
+  background-color: beige;
+}
+
+blockquote {
+  font-style: italic
+}
+
+.quote p {
+  text-align: right
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.flexbox li {
+  flex: 1;
+  list-style-type: none;
+}
+.why .flexbox li > * {
+  padding: .5em
+}
+
+.why .flexbox img {
+  float: left;
+}
+
+.sponsers .flexbox, .team-members .flexbox {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsers .flexbox li, .team-members .flexbox li  {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.sponsers .flexbox img {
+  margin: .3em
+}
+
+.team-members .flexbox li {
+  margin: 0 2em;
+  flex-direction: column;
+}
+
+.team-members .flexbox li img {
+  border-radius: 50%;
+}
+
+nav ul, footer {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 10% 10% 10% 10%;
+}
+
+nav li:first-child {
+  grid-column-start: 2;
+}
+
+nav li:nth-child(2) {
+  grid-column-start: 5;
+}
+
+nav li:last-child {
+  grid-column-start: 7;
+}
+
+footer div:first-child {
+  grid-column-start: 2;
+}
+footer div:last-child {
+  grid-column-start: 4;
+}
+
+footer ul {
+  padding-left: 0pt;
+}
+
+li {
+  list-style-type: none;
+}
+
