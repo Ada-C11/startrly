@@ -80,8 +80,16 @@ nav li {
 
 /* MEET THE TEAM */
 
+.team {
+    /* background-color: lightcoral; */
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+}
+
 .team h2 {
     text-align: center;
+    /* padding-top: 5vw; */
+    padding-bottom: 5vw;
 }
 
 .team ul {
@@ -96,16 +104,18 @@ nav li {
     list-style-type: none;
     text-align: center;
     width: 30%;
-
 }
 
 .team span {
     display: block;
+    padding: 3%;
 
 }
 
 .team img {
     border-radius: 50%;
+    border: 3px double;
+    border-color: lightgray;
 }
 
 /* SPONSORS */
