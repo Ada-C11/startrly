@@ -52,3 +52,74 @@ sub {
     
 }
 
+.quote {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2fr, 1fr;
+  border-bottom: 2px solid lightgray;
+  padding: 50px 80px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+
+.quote p {
+  text-align: end;
+  margin-right: 100px;
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
+.quote blockquote {
+  grid-column: 2/6;
+  grid-row: 1/2;
+  text-align: start;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+.quote p::before {
+  content: "--"
+}
+h2 {
+  text-align: center;
+}
+.reason-container {
+  display: flex;
+  flex-direction: row;
+  
+  border-bottom: 2px solid lightgray;
+}
+.reason strong {
+  display: inline-block;
+}
+.team-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 200px;
+
+}
+.team-container img {
+  border-radius: 50%;
+  padding: .3em;
+  border: 1px solid lightgray;
+  filter: grayscale(80%);
+  flex: 0 0 calc(33.33% - 30px);
+  margin: 5px;
+}
+.team-container li {
+  margin: 20px 100px;
+}
+.team-container span {
+  display: block;
+  text-align: center;
+}
+
