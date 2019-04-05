@@ -223,15 +223,15 @@ blockquote:before, blockquote:after {
 /* TEAM */
 
 #team ul {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:center;
     max-width:900px;
     margin:auto;
+    justify-content: space-evenly;
 }
 
 #team span {
     display:block;
+    font-family: monospace;
+    font-size:1.5em;
 }
 
 #team li {
