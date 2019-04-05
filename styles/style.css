@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro', 'https://fonts.googleapis.com/css?family=Cardo');
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+.borders {
+  border-bottom: 3px solid lightgray;
+}
+
+.navigation_bar {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 100px;
+  
+}
+
+.navigation_bar > li {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#try {
+  justify-content: flex-end;
+  padding-right: 17%;
+}
+
+#title_and_tagline {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("https://external-preview.redd.it/CEYbFD42d05IHI648ZttpPwozZ5QnTnDpRWsmJhJyag.jpg?auto=webp&s=91c9209d8dbc31bffe7e5fed3e6df5a31692317f");
+  display: flex;
+  color: white;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#title_and_tagline > h1 {
+  font-size: 3.5em;
+  margin-top: -20px;
+}
+
+sub {
+  font-size: 2em;
+  margin: -65px 20px 0px 20px;
+  position: static;
+  line-height: normal;
+}
+
+#button {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+
+#button:hover {
+  background: rgb(228, 52, 21);
+}
+
+blockquote, blockquote + p {
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "Cardo", san-serif;
+  font-style: italic;
+  margin: 10%;
+}
+
+blockquote::before, blockquote::after {
+  content: "\""
+}
+
+blockquote + p {
+  text-align: right;
+  margin: 5%;
+}
+
+blockquote + p::before {
+  content: "-- "
+}
+
+#why_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#why_section h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#why_section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#why_section li {
+  width: 350px; 
+  margin-bottom: 40px;
+}
+
+#why_section img {
+  float: left;
+  margin: 10px;
+}
+
+.team_profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.profile_photos {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.profile_photos li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 75px 20px 75px;
+}
+
+.profile_photos img {
+  border-radius: 50%;
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#sponsors img {
+  opacity: 0.6;
+}
+
+.sponsor_images {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.sponsor_images li {
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  margin: 40px 0px 70px 125px;
+}
+
+.footer div {
+  margin-right: 150px;
+}
