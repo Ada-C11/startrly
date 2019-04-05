@@ -83,7 +83,7 @@ nav ul {
 }
 
 nav li:hover {
-    color:white
+    color: #ffffff;
 }
 
 nav ul #startrly-logo {
@@ -270,11 +270,14 @@ blockquote:before, blockquote:after {
 .footer-links {
     margin: 0 100px;
     font-family: monospace;
-    font-size:1em;
 }
 
+.footer-links li {
+    font-size:1.2em;
+}
 .footer-links li:hover{
-    color:white;
+    color: #9198e5
+
 }
 
 /* For mobile */
