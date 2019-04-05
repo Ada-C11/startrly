@@ -4,7 +4,6 @@
     justify-content: flex-start;
 }
 .nav {
-    /* grid-row: 1/2; */
     background-color: aquamarine;
     height: 20%;
 
@@ -96,7 +95,6 @@ a:hover {
 .cfo {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin: 5px;
 }
 .cmo {
     grid-column: 4/5;
@@ -116,6 +114,22 @@ a:hover {
 }
 .grid-container img {
     border-radius: 100px;
+}
+.footer-box {
+    display:flex;
+    flex-direction: row;
+    justify-items: space-around;
+    align-items: flex-start;
+    height: 50px;
+}
+.footer-box div {
+    margin: 20px;
+}
+.sponsors {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
   
 
