@@ -1,3 +1,4 @@
+/* NAVIGATION BAR */
 nav ul {
     display: grid;
     grid-template-columns: 6fr 2fr 1fr;
@@ -7,6 +8,7 @@ nav li {
     list-style-type: none;
 }
 
+/* TAGLINE SECTION */
 .intro {
     height: 25vh;
     display: flex;
@@ -21,6 +23,7 @@ nav li {
     margin-bottom: 5vh;
 }
 
+/* QUOTES */
 .testimonial {
     margin-top: 10vh;
     height: 25vh;
@@ -35,37 +38,67 @@ nav li {
     
 }
 
-/* .selling-points {
-    display: flex;
-    flex-direction: column;
-    background-color: red;
+/* WHY SECTION */
+.selling-points {
+    padding-bottom: 5vw;
 }
 
-.selling-points ul li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.selling-points h2 {
+    text-align: center;
+    padding-top: 3vw;
+}
+
+.selling-points img {
+    float: left;
 }
 
 .selling-points ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
+
+    justify-content: space-between;
+
+    padding: 0;
 }
 
 .selling-points ul li {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
+    /* border: 2px solid pink; */
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    margin: 16px;
 } 
+
+/* .selling-points ul > li > *:first-child {
+    border: 5px solid green; 
+    margin-right: 1.5vw;
+    height: 15vw;
+} */
+
+/* .selling-points ul > li > *:last-child {
+    border: 5px solid purple;
+} */
+
+.selling-points p {
+    color: red;
+}
+
+.selling-points img {
+    padding-bottom: 0px;
+}
 
 .selling-points strong,
 .selling-points p {
-    color: red;
-    text-align: center;
-    flex-wrap: wrap;
+    max-width: 25vw;
+    justify-content: center;
 }
 
-.selling-points h2 {
-    text-align: center;
-}  */
+/* MEET THE TEAM */
+
+/* SPONSORS */
+
+/* FOOTER */
