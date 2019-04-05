@@ -11,9 +11,9 @@ ul {
     padding-inline-start: unset;
 }
 
-img {
+/* img {
     padding: 0px 10px 0px 10px;
-}
+} */
 
 /* titles */
 .title {
@@ -121,8 +121,25 @@ blockquote::before, blockquote::after {
     margin-bottom: 4em;
 }
 
-/* the team */
+/* why section */
+#why {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 5em;
+    margin-right: 5em;
+}
 
+#why > li {
+    padding: 0px 40px 0px 40px;
+}
+
+#why > li > img {
+    float: left;
+    margin-right: 10px;
+}
+
+/* the team */
 #team {
     display: flex;
     flex-direction: row;
