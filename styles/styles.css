@@ -3,12 +3,14 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   margin: 5px;
+  width: 100%;
 }
-/* 
-#heading {
-  display: flex;
-  flex-wrap: nowrap;
-} */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
 
 #startrly {
   margin-right: 400px;
@@ -47,6 +49,11 @@ section:first-of-type {
   line-height: 5em;
   padding: 12px;
   font-size: 1em;
+  background-color: darkred;
+}
+
+#actionbox:hover {
+    color: dimgray;
 }
 
 .quote {
@@ -90,8 +97,6 @@ h2 {
 
 .image-item {
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: space-around; */
   align-items: flex-start;
 }
 
@@ -105,7 +110,6 @@ h2 {
 
 #team-container > li > img {
   border-radius: 50%;
-  border: 0.25px solid lightgray;
 }
 
 #team-container span {
@@ -116,7 +120,6 @@ h2 {
 #team1 {
   grid-column-start: 2;
   grid-row-start: 1;
-  justify-content: center;
 }
 
 #team2 {
@@ -140,7 +143,6 @@ h2 {
 }
 
 #sponsor-container {
-  display: grid;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
