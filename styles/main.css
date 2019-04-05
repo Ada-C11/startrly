@@ -2,6 +2,19 @@
   font-family: 'Space Mono', monospace;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.25em;
+}
+
 li {
   list-style-type: none;
 }
@@ -29,9 +42,11 @@ nav ul {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-row: minmax(500px, auto);
   padding: 20px;
   justify-content: space-around;
   align-items: center;
+  border: 1.5em solid pink;
 }
 
 
@@ -46,7 +61,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 20px;
+  margin: 50px 30px;
 }
 
 body {
@@ -56,7 +71,7 @@ body {
 ul {
   padding-inline-start: 0px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: space-evenly;
 }
 
@@ -72,8 +87,9 @@ ul {
 
 .why img {
   align-self: flex-start;
-  padding: 16px
+  padding: 16px;
 }
+
 
 a.button {
   border: solid 2px pink;
@@ -97,7 +113,7 @@ a.button {
 }
 
 .team li {
-  width: 33%;
+  width: 30%;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -106,10 +122,12 @@ a.button {
   border-radius: 100%;
   border: 6px solid pink;
   margin: 1rem;
+  width: 250px;
+  height: auto;
 }
 
 .testimonial {
-  padding: 1rem 6rem;
+  padding: 1rem 12rem;
 }
 
 .testimonial p {
@@ -118,7 +136,6 @@ a.button {
   font-style: italic;
   font-family: 'Noto Serif', serif;
   font-size: 1rem;
-  line-height: 150%;
 }
 
 blockquote {
@@ -128,10 +145,21 @@ blockquote {
   line-height: 175%;
 }
 
+section.sponsors {
+  margin: 0 10em;
+}
+
 .sponsors ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around; 
+  align-items: center;
+}
+
+.sponsors img {
+  width: 200px;
+  height: auto;
+  margin: 0 20px;
 }
 
 footer {
