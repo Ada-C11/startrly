@@ -1,0 +1,207 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template: auto 2.5fr 2fr 2fr 2fr 1.75fr 1.75fr 2fr auto / 2fr 1fr 1fr;
+  grid-template-areas: 
+  "n n n"
+  "t t t"
+  "q1 q1 q1"
+  "w w w"
+  "q2 q2 q2"
+  "team team team"
+  "team team team"
+  "s s s"
+  "f f f";
+}
+
+.nav {
+  grid-area: n; 
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.try {
+text-align: right;
+color: #B39662;
+padding-left: 380px;
+}
+
+.about {
+  padding-right: 80px;
+
+}
+
+.tagline {
+  grid-area: t;
+  text-align: center;
+  font-weight: bold;
+  background-color: #BFFFDD;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+#startrly {
+  font-family: 'Heebo', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+}
+sub {
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+  margin-top: 2px;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  font-size: 2em;
+  }
+
+button:hover {
+  background-color:#FFE0A5;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 15px;
+  
+}
+.quote1 {
+  grid-area: q1;
+  display: flex;
+  border-bottom: solid;
+  border-width: 1px;
+  margin-top: 5em;
+}
+
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
+}
+
+blockquote:before {
+  color: #000;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #000;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 1em;
+  vertical-align: -0.5em;
+}
+
+.author {
+  text-align: right;
+  margin-right: 30px;
+  padding-right: 40px;
+  font-style: italic;
+}
+
+.why {
+  grid-area: w; 
+  list-style: none;
+  border-bottom: solid;
+  border-width: 1px;
+}
+.why h2 {
+  text-align: center;
+}
+.why ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+}
+
+.why img {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+  
+.quote2 {
+  grid-area: q2;
+  border-bottom: solid;
+  border-width: 1px;
+  margin-top: 5em;
+}
+
+.team {
+  grid-area: team;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.team h2 {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.team ul li{
+  margin-bottom: 3em;
+}
+
+.team img {
+  border-radius: 50%;
+  float: top; 
+}
+
+.first-3 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+ .team span {
+  bottom: 0em; 
+  line-height: normal;
+}
+
+.sponsors {
+  grid-area: s;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.sponsors ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.sponsors h2 {
+  text-align: center;
+}
+
+.footer {
+  grid-area: f;
+  display: flex;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
