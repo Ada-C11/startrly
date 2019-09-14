@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700');
+/* Eliminate bullet point, spread navigation on a row */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.nav {
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
+    list-style-type: none;
+    font-weight: 700;
+    margin-top: 1.5em;
+    font-size: 1.4em;
+   
+}
+.nav li:hover {
+    color: red;
+}
+
+/* Create three columns to store each element of main-page */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.intro h1 {
+    font-size: 2.3em;
+    align-self: center;
+    margin-top: 2em;
+}
+
+.intro p {
+    font-size: 2em;
+    align-self: center;
+}
+.intro img {
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    margin-top: 100px;
+    align-self: center;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+    margin-top: 1.5%;
+}
+
+.intro + hr {
+    margin-top: 18%;
+}
+
+#hobbies {
+    margin: 100px;
+}
+
+#contact {
+    margin: 100px;
+}
