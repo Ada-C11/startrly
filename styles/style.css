@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    font-weight: bold;
+}
+
+nav li {
+    padding-left: 5rem;
+    padding-right: 5rem;
+} 
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro h1 {
+    margin-top: 5rem;
+}
+
+#intro sub {
+    margin-top: 2rem;
+    font-size: 150%;
+    position: static;
+    line-height: normal;
+    font-weight: bold;
+}
+
+#intro a { 
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    font-size: 125%;
+    text-decoration: none;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+}
+
+#intro a:hover {
+    font-weight: bold; 
+    background-color: lightsalmon;
+}
+
+.quote {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;  
+    align-items: center;  
+    font-size: 110%;
+    background-color: whitesmoke;
+} 
+
+.quote blockquote {
+    text-align: left;
+    font-size: 125%;
+    margin-right: 125px;
+    margin-left: 200px;
+    margin-top: 75px;
+    line-height: 50px;
+}
+
+.quote blockquote::before {
+    content: open-quote;
+}
+
+.quote blockquote::after {
+    content: close-quote;
+}
+
+.quote p {
+    font-size: 125%;
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 75px;
+}
+
+.quote p::before { 
+    content: "--"
+}
+
+.why ul {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.why h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.why li {
+    list-style-type: none;
+    padding: 0;
+    max-width: 25rem;
+    font-size: 90%;
+}
+
+.why ul li img {
+    float: left;
+}
+
+.team {
+    justify-content: center;
+    margin: 8rem;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.team ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team ul li {
+    display: flex; 
+    flex-direction: column;
+    margin: 2rem 5rem;
+    text-align: center;
+    line-height: 175%;
+}
+
+.team ul li img {
+    border-radius: 50%;
+    border: double 3px lightgrey;
+}
+
+.sponsors h2 {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.sponsors ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-top: 2px solid lightgrey;
+}
+
+.footer ul, .footer h3 {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5rem;
+    margin-right: 6rem;
+}
